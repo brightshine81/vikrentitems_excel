@@ -1,0 +1,2270 @@
+#hmfooter {
+	font-size: x-small;
+	text-align: center;
+}
+.vriadmincaltable td {
+	background:#f9f9f9;
+	font-size:11px;
+	width:26px;
+	height:15px;
+}
+.vriadmincaltable .busy {
+	background:#8AA9CA;
+}
+.vriadmincaltable .busy a {
+	font-weight:bold;
+	color:#fff;
+}
+.vriadmincaltrmon td {
+	background:#346983;
+	color:#fff;
+	font-weight:bold;
+	padding:4px 0;
+}
+.vriadmincaltrmdays td {
+	background:#CCCCCC;
+	text-align:center;
+}
+.vriorderof {
+	padding:10px 0;
+	font-size:14px;
+}
+.vriorderof a {
+	font-size:12px;
+}
+.vriorderpar {
+	margin:10px 0 5px 0;
+	padding:0;
+	font-weight:bold;
+	font-size:13px;
+}
+.vriordersp {
+	font-weight:bold;
+}
+.vriorderpartot {
+	padding:5px 10px;
+	margin:10px 5px;
+	background:#efefef;
+	border:1px solid #ccc;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	font-weight:bold;
+}
+.vriorderpardelivery {
+	padding:5px 10px;
+	margin:10px 5px;
+	background:#efefef;
+	border:1px solid #ccc;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.vriorderseatasconf {
+	background:#348741;
+	border:1px solid #235A2C;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	margin:5px 4px 10px 0;
+	width:auto;
+	display:inline-block;
+	padding:10px;
+}
+.vriorderseatasconf a {
+	color:#fff !important;
+	font-weight:bold;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.successmade {
+	margin: 10px 0px;
+	padding: 12px 12px 12px 40px;
+	color: #4F8A10;
+	background:url("./resources/images/ok.png") no-repeat scroll 10px center #DFF2BF;
+}
+
+.err {
+	margin: 10px 0px;
+	padding: 12px 12px 12px 40px;
+	color: #D8000C;
+	background:url("./resources/images/no.png") no-repeat scroll 10px center #FFBABA;
+}
+
+.warn {
+	margin: 10px 0px;
+	padding: 12px 12px 12px 40px;
+	color: #9F6000;
+	background: url("./resources/images/warning.png") no-repeat scroll 10px center #FEEFB3;
+}
+
+.maxthirty{
+	cursor: pointer;	
+	max-height: 30px;
+	height: expression(this.height > 30 ? "30px" : true);
+	max-width: 30px;
+	width: expression(this.width > 30 ? "30px" : true);
+
+}
+
+.maxfifty{
+	max-height: 50px;
+	height: expression(this.height > 50 ? "50px" : true);
+}
+
+.maxninety{
+	max-height: 190px;
+	height: expression(this.height > 190 ? "190px" : true);
+}
+
+.imgresult{
+	max-height: 85px;
+	height: expression(this.height > 85 ? "85px" : true);
+	max-width: 130px;
+	width: expression(this.width > 130 ? "130px" : true);
+}
+
+.vmain{
+	background-image: url('./resources/images/tab.png');
+	background-position: center left;
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 160px;
+	font-weight: bold;
+	font-size:14px;
+	color: #fff !important;
+}
+
+.vmenulink a {
+	color:#333 !important;
+	display: block;
+}
+
+.vmenulinkactive{
+	background-image: url('./resources/images/vmenulink_active.png');
+	background-position: center left;
+	background-repeat: no-repeat;
+}
+
+.vmenulinkactive a {
+	display: block;
+	color:#fff !important;
+}
+
+.vrisubmithfares {
+	background: none repeat scroll 0 0 #0B9E9E !important;
+    border: 1px solid #007171 !important;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF !important;
+    font-size: 14px;
+    padding: 5px;
+	margin:10px 0 0 0;
+}
+
+.vrisubmithcharges {
+	background: none repeat scroll 0 0 #386B16 !important;
+	border: 1px solid #2D5511 !important;
+	border-radius: 4px 4px 4px 4px;
+	color: #FFFFFF !important;
+	font-size: 14px;
+	padding: 5px;
+	margin:10px 0 0 0;
+	cursor:pointer;
+}
+
+.free{
+	color: #000000;
+}
+
+.busy{
+	color: #000000;
+	background: #FF0000;
+}
+
+.notbusy{
+	color: #000000;
+	background: #77c06c;
+}
+.bluedays{
+	background: #a3c0de;
+	min-width: 2.7%;
+}
+.icon-vikrentitems:before {
+	content: "3";
+}
+
+.icon-vikrentitemsconfig:before {
+	content: "7";
+}
+
+td.itemname {
+	background: #d3dae1;
+	padding: 0 0 0 10px;
+}
+
+.dailyprices a {
+	color:#5d7120 !important;
+}
+.dailyprices a:hover {
+	text-decoration:none !important;
+}
+.hourlyprices a {
+	color: #007171 !important;
+}
+.hourlyprices a:hover {
+	text-decoration:none !important;
+}
+
+.hourscharges a {
+	color: #337ab7 !important;
+}
+.hourscharges a:hover {
+	text-decoration:none !important;
+}
+.vriadminfaresctitle span.vri-uppbold {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.vri-fares-tabs {
+	display: flex;
+}
+.vri-fares-tabs > .dailypricesactive {
+	border-top: 3px solid #5d7120;
+	background: #fff;
+	color: #5d7120;
+}
+.vri-fares-tabs > .hourschargesactive {
+	border-top: 3px solid #337ab7;
+	background: #fff;
+	color: #337ab7;
+}
+.vri-fares-tabs > .hourlypricesactive {
+	border-top: 3px solid #007171;
+	background: #fff;
+	color: #007171;
+}
+.vri-fares-tabs > div a {
+	display: block;
+}
+.vri-fares-tabs > div a:hover {
+	background: #ddd;
+}
+.vri-fares-tabs > div a:hover, .vri-fares-tabs > div a:focus, .vri-fares-tabs > div a:active {
+	text-decoration: none;
+	background: #ddd;
+}
+.vri-fares-tabs > div {
+	font-size: 11px;
+	font-weight: bold;
+	display: inline-block;
+	vertical-align: top;
+	background: #e7e7e7;
+	border-right: 1px solid #ddd;
+	border-top: 3px solid #e7e7e7;
+	text-align: center;
+	text-transform: uppercase;
+	flex: 1;
+	height: 35px;
+	min-width: 200px;
+	line-height: 33px;
+}
+.vri-insertrates-cont {
+	background: #f6f6f6;
+	padding: 15px;
+}
+.vri-ratestable-lbl {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.vri-insertrates-cont table {
+	margin: 5px 0 15px;
+}
+.vri-insertrates-cont table td {
+	vertical-align: middle;
+	padding-right: 10px;
+}
+.vri-insertrates-cont table td input {
+	margin-bottom: 0;
+}
+.vri-insertrates-cont table .vrisubmitfares {
+	margin-top: 15px;
+}
+.vridashparag {
+	font-size:12px;
+}
+.vridashparagred {
+	font-weight: bold;
+	font-style: italic;
+}
+.vridashspanright {
+	float: right;
+	padding:0 0 20px 0;
+	font-size:12px;
+}
+.vridashspanright form {
+	padding:0 0 0 3px;
+	display:inline;
+}
+.vridashdivleft {
+	float:left;
+	border:1px solid #ddd;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	background:#fff;
+	padding:20px;
+	box-shadow:0 0 2px #ddd;
+	-moz-box-shadow:0 0 2px #ddd;
+	-webkit-box-shadow:0 0 2px #ddd;
+	margin:15px 30px 15px 0;
+	width:55%;
+}
+.vridashdivleft .vridashdivlefthead {
+	margin:0 0 10px 0;
+	padding:0;
+	text-transform:uppercase;
+	font-size:14px;
+	color:#0A5A24;
+}
+.vridashdivleft .vridashtable {
+	width:100%;
+}
+.vridashdivleft .vridashtable td, .vridashdivright .vridashtable td {
+	padding:3px 0;
+}
+.vridashdivleft .vridashtable td a, .vridashdivright .vridashtable a {
+	font-size:12px;
+	color:#016799;
+}
+.vridashdivright {
+    border: 2px solid #ddd;
+    background: #fff;
+    padding: 20px;
+    margin: 15px 0 15px 0;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.vridashdivright .vridashdivrighthead {
+    color: #0A5A24;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+}
+.vridashdivright .vridashtable {
+	width:100%;
+}
+.vridashdivright .vridashtable .vridashtrlastres td, .vridashdivleft .vridashtable .vridashtrlastres td {
+	font-size:12px;
+	font-weight:bold;
+	color:#000;
+	text-transform:uppercase;
+	padding:0 0 5px 0;
+}
+.vridashdivleft .vridashtable .vridashtrlastres td:first-child {
+	padding:0 5px;
+}
+div.current {
+    border: 1px solid #CCCCCC;
+    clear: both;
+    padding: 10px;
+}
+dl.tabs {
+    float: left;
+    margin: 10px 0 -1px;
+    z-index: 50;
+}
+#adminForm .panel_1_id {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+dl.tabs dt.open {
+	background: #f9f9f9 none repeat scroll 0 0;
+	border-bottom: 1px solid #cccccc;
+	color: #000000;
+	z-index: 100;
+}
+dl.tabs dt {
+	background: none repeat scroll 0 0 #E9E9E9;
+	border: 1px solid #CCCCCC;
+	color: #666666;
+	float: left;
+	margin-left: 3px;
+	padding: 4px 10px;
+}
+dt.tabs span h3 {
+    font-size: 13px;
+}
+.vrispdateadd {
+	padding: 5px;
+	color: #000000;
+	cursor: pointer;
+	border:1px solid #ddd;
+	background:#f0f0ee;
+}
+.vrioverviewtable {
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-spacing: 0;
+}
+.vrioverviewtablerow {
+	height: 30px;
+}
+table.vrioverviewtable th, table.vrioverviewtable td {
+	box-sizing: border-box;
+	text-align: center;
+	vertical-align: middle;
+}
+.vrioverviewtablerowone {
+	height: 45px;
+}
+.vrioverviewtablerow td {
+	height: 40px;
+}
+.vrioverviewtablerow .bluedays > span {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+table.vrioverviewtable .itemname {
+	text-align: left;
+	height: 40px;
+}
+table.vrioverviewtable .itemname .vri-overview-itemname {
+	display: inline-block;
+	margin-top: 3px;
+	font-weight: bold;
+}
+table.vrioverviewtable .itemname .vri-overview-itemunits {
+	display: inline-block;
+	margin: 0 5px 0 2px;
+	background: none repeat scroll 0 0 #22485d;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	min-height: 20px;
+	min-width: 20px;
+	padding: 4px;
+	float: left;
+	text-align: center;
+}
+.vrioverviewtablerowone th {
+	height: 45px;
+}
+.vrioverviewtablerow td, .vrioverviewtablerowone th {
+	border: 1px solid #ffffff;
+}
+.vrioverviewtdone {
+	min-width: 130px !important;
+	padding: 0 0 0 10px;
+}
+
+.vrieditorderitemblock {
+	background: #f6f6f6 none repeat scroll 0 0;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin: 0 0 10px;
+	max-width: 305px;
+	padding: 10px;
+}
+.vrioverviewtablerow .vrioverviewtdone {
+	vertical-align: middle;
+}
+
+.vricloseitem{
+	text-align: left;
+	margin: 5px 0 0 0;
+}
+.vricloseitemsp {
+	font-weight: bold;
+	background-image: url('./resources/images/disabled.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding: 5px 0 5px 18px;
+}
+.vricloseitemsp label {
+	font-size: 11px !important;
+	display: inline !important;
+}
+.vriordersitemclosed {
+	background-image: url('./resources/images/disabled.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding: 5px 0 5px 18px;
+}
+
+.vriconfspanclosed {
+	background: #fff;
+	padding: 2px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	width: auto !important;
+}
+.vriconfrmimgsmall {
+	cursor: pointer;
+	width: 20px;
+	vertical-align: middle;
+}
+.vrivalidategmapbaseaddrp {
+	font-weight: bold;
+	height: 25px;
+}
+#map-canvas {
+	position: fixed !important;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+#vripanel {
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+.vrisuccessbg{
+	background: #5cb85c;
+	color: #fff;
+	padding: 10px 10px 3px 10px;
+}
+.vrierrorbg {
+	background: #d9534f;
+	color: #fff;
+	padding: 10px 10px 3px 10px;
+}
+.vrivalidategmapbaseaddrp #vribaseposition {
+	font-style: italic;
+}
+.vri-valid-geoaddress-par {
+	font-weight: bold;
+	padding: 0 10px;
+}
+#vripanel .fa-check-circle {
+	color: #5cb85c;
+	font-size: 16px;
+	margin-right: 5px;
+}
+#vripanel .fa-times-circle {
+	color: #d9534f;
+	font-size: 16px;
+	margin-right: 5px;
+}
+.vrimodaliframespan {
+	display: inline-block;
+	padding: 5px 5px 0 5px;
+	border: 1px solid #cccccc;
+	border-radius: 5px 5px 5px 5px;
+	background: #666666;
+	color: #ffcc00;
+	float: right !important;
+	width: auto !important;
+}
+.vrimodaliframebtn {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5px;
+}
+.vrimodaliframe {
+	padding: 5px 15px;
+	border-radius: 4px;
+	display: inline-block;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	color: #fff !important;
+}
+.vrimodaliframe:hover {
+	color: #fff !important;
+	background-color: #286090;
+	border-color: #204d74;
+	text-decoration: none;
+}
+.vrimodaliframe i {
+	margin-right: 2px;
+}
+.vrisortasc {
+	background:url('./resources/images/sortasc.png') right center no-repeat;
+	padding: 0 14px 0 0;
+}
+.vrisortdesc {
+	background:url('./resources/images/sortdesc.png') right center no-repeat;
+	padding: 0 14px 0 0;
+}
+p.vrifilterbyit {
+	text-align: right;
+	clear: both;
+	margin-bottom: 1px;
+}
+p.vrifilterbyit label {
+	display: inline !important;
+}
+p.vrifilterbyit input {
+	display: inline !important;
+}
+.vriflushsession {
+	float: right;
+	background: none repeat scroll 0 0 #22485d;
+	border: 1px solid #003300;
+	border-radius: 5px;
+	color: #FFFFFF;
+	display: inline-block;
+	float: right;
+	font-size: 11px;
+	padding: 3px 8px;
+	text-decoration: none;
+}
+.vriflushsession:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#vripaymentlogdiv {
+	display: none;
+	border: 1px dashed #ccc;
+	height: 250px;
+	max-width: 500px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 5px;
+}
+
+input, textarea, select {
+    width: auto !important;
+}
+table.adminform label {
+	display: inline;
+	margin:0 0 0 5px;
+}
+table.adminform td {
+	padding: 6px 0;
+}
+table.adminform div.input-append {
+	display: inline;
+}
+
+/* Config: Do not edit this */
+.vikpaymentparam {
+	display: block;
+	padding: 2px;
+}
+.vikpaymentparamlabel {
+	display: inline-block;
+	min-width: 130px;
+}
+.vikpaymentparaminput {
+	display: inline-block !important;
+}
+.vikpaymentparamlabelhelp {
+	font-size: smaller;
+	font-style: italic;
+	padding-left: 5px;
+}
+.vri-config-param-cell {
+	background: none repeat scroll 0 0 #e9e9e9;
+	border-right: 1px solid #ddd;
+	vertical-align: middle !important;
+}
+.vri-config-param-cell i {
+	float: right;
+}
+.fieldset-left {
+	float: left;
+	margin-right: 20px;
+}
+#vriglobclosedaysdiv > div {
+	float: left;
+	margin-right: 10px;
+}
+
+/* Joomla 3.7.0 - Start */
+.field-calendar {
+	display: inline-block;
+	vertical-align: top;
+}
+.btn-group .calendar-head-row {
+	font-size: 13px;
+}
+/* Joomla 3.7.0 - End */
+
+/* Back-end Menu */
+.vri-menu-container {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 50px;
+}
+.vri-menu-updates {
+	float: right;
+	display: inline-block;
+}
+.vri-menu-updates button {
+	display: inline-block;
+	float: right;
+	background: #449cc9;
+	color: #fff;
+	border: 1px solid #449cc9;
+	padding: 13px 15px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.vri-menu-updates button:hover {
+	background: #316b89;
+	border-color: #316b89;
+}
+.vri-menu-right ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.vri-menu-right > .vri-menu-ul {
+	display: inline-block;
+}
+.vri-submenu-ul {
+	margin: 0;
+	display: none;
+	position: absolute;
+}
+.vri-menu-ul li {
+	display: inline-block;
+	text-align: left;
+}
+.vri-submenu-ul {
+	background: #fff;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	min-width: 180px;
+	border-radius: 4px;
+	z-index: 1;
+}
+.vri-submenu-ul li {
+	display: block;
+	float: none;
+	width: 100%;
+}
+.vri-submenu-ul li span {
+	display: block;
+	padding: 5px 2px;
+}
+.vri-menu-parent-li > span {
+	display: inline-block;
+	color: #fff;
+	cursor: pointer;
+	padding: 14px 27px 14px 17px;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+}
+.vri-menu-parent-li > span a {
+	color: #fff !important;
+}
+.vri-menu-parent-li > span a:hover {
+	text-decoration: none !important;
+}
+.vri-menu-parent-li > span:after {
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid;
+	color: #fff;
+	content: "";
+	display: inline-block;
+	height: 0;
+	position: absolute;
+	right: 9px;
+	top: 48%;
+	vertical-align: middle;
+	width: 0;
+}
+.vri-menu-parent-li > span:hover, .vri-menu-parent-li-active > span, .vri-menu-parent-li-opened > span {
+	background: #1e4e1d;
+}
+.vri-menu-parent-li span i {
+	margin-left: -2px;
+	margin-right: 5px;
+}
+.vri-submenu-ul li {
+	margin: 0 0 4px;
+}
+.vri-submenu-ul li span a {
+	padding: 0 10px 0 10px;
+}
+.vri-submenu-ul li span:hover,
+.vri-submenu-ul li span.vmenulinkactive {
+	background: #eee;
+}
+.vri-submenu-ul li span:hover a,
+.vri-submenu-ul li span.vmenulinkactive a {
+	color:#666 !important;
+	text-decoration: none;
+}
+.vri-menu-left {
+	float: left;
+	display: inline-block;
+	margin-right: 15px;
+	max-width: 250px;
+}
+.vri-menu-right {
+	flex: 1;
+	background: #2F782E;
+	border-radius: 2px;
+}
+/* END Back-end Menu */
+.vri-country-flag-left {
+	float: left;
+	margin: 0 5px 0 0;
+}
+p.vriitemparamp label {
+	display: inline !important;
+	padding-right: 8px;
+}
+p.vriitemparamp span {
+	display: inline-block;
+	font-size: smaller;
+	font-style: italic;
+	max-width: 300px;
+	padding-left: 8px;
+}
+/* Translations - Start */
+.vri-translation-langtabs {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+.vri-translation-tab {
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+	font-weight: bold;
+	min-width: 120px;
+	height: 25px;
+	text-align: center;
+	background: none repeat scroll 0 0 #eee;
+	color: #666;
+	border: 1px solid #ddd;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom: none;
+	margin: 0;
+	padding: 4px;
+}
+.vri-translation-tab-default {
+	background: none repeat scroll 0 0 #fff;
+}
+.vri-translation-tabscontents {
+	display: block;
+	margin: 0;
+	padding: 4px;
+	border: 1px solid #ddd;
+	min-height: 200px;
+}
+.vri-translate-column-cell {
+	background: none repeat scroll 0 0 #e9e9e9;
+	border-right: 1px solid #ddd;
+	text-align: right !important;
+	vertical-align: middle !important;
+}
+.vri-translate-reference-cell {
+	background: none repeat scroll 0 0 #e9e9e9;
+	text-align: left !important;
+	font-size: 105%;
+	font-weight: bold;
+}
+.vri-missing-translation,.vri-field-translated {
+	position: relative;
+}
+.vri-missing-translation:before {
+	background: none repeat scroll 0 0 #FEEFB3;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #9F6000;
+	content: "!";
+	font-size: 12px;
+	font-weight: bold;
+	height: 18px;
+	left: 2px;
+	position: absolute;
+	text-align: center;
+	top: 5px;
+	width: 18px;
+}
+.vri-field-translated:before {
+	background: none repeat scroll 0 0 #DFF2BF;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: #4F8A10;
+	content: "\2713";
+	font-size: 12px;
+	font-weight: bold;
+	height: 18px;
+	left: 2px;
+	position: absolute;
+	text-align: center;
+	top: 5px;
+	width: 18px;
+}
+.vri-translation-tab.vri-translation-tab-ini {
+	float: right;
+}
+.vri-translation-iniflag {
+	display: inline-block;
+	padding: 1px 4px;
+	background: none repeat scroll 0 0 #365868;
+	color: #fff;
+}
+.vri-inifile-totrows {
+	display: inline-block;
+	margin-right: 8px;
+	padding: 2px 4px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+.vri-inifile-path {
+	display: inline-block;
+	margin-right: 8px;
+	padding: 2px 4px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 90%;
+}
+.vri-inifile-exists {
+	background: none repeat scroll 0 0 #DFF2BF;
+	color: #4F8A10;
+}
+.vri-inifile-notfound {
+	background: none repeat scroll 0 0 #FEEFB3;
+	color: #9F6000;
+}
+/* Translations - End */
+/* Dashboard - Start */
+.vri-dashboard-today-bookings .table-responsive {
+	border: 0;
+	margin-bottom: 0;
+}
+.vri-dashboard-today-dropoff-rows td, .vri-dashboard-today-pickup-rows td, .vri-dashboard-cars-locked-rows td {
+    vertical-align: middle !important;
+}
+.vri-dashboard-today-bookings {
+	width: 100%;
+	display: flex;
+	margin-top: 15px;
+}
+.vri-dashboard-today-pickup-wrapper, .vri-dashboard-today-dropoff-wrapper  {
+	width: 50%;
+	float: left;
+	display: inline-block;
+	border:2px solid #ddd;
+}
+.vri-dashboard-today-pickup-wrapper {
+	margin: 0 20px 0 0;
+}
+.vri-dashboard-today-pickup-wrapper h4 {
+	font-size: 22px;
+	font-weight: normal;
+	color: #006600;
+	text-transform: uppercase;
+	text-align: right;
+	padding: 10px;
+	position: relative;
+	display: inline-block;
+}
+.vri-dashboard-today-dropoff-wrapper h4 {
+	font-size: 22px;
+	font-weight: normal;
+	color:#006600;
+	text-transform: uppercase;
+	text-align: right;
+	padding: 10px;
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+.vri-dashboard-today-pickup, 
+.vri-dashboard-today-dropoff {
+	display: inline-block;
+	width: 100%;
+	max-height: 300px;
+	overflow-y:scroll;
+}
+.vri-dashboard-today-pickup table tr:first-child td, 
+.vri-dashboard-today-dropoff table tr:first-child td,
+.vri-dashboard-next-bookings table tr:first-child td,
+.vri-dashboard-items-locked table tr:first-child td {
+	background: #F6F6F6;
+	color: #22485d;
+	font-weight: bold;
+	padding: 15px 8px;
+}
+.vri-dashboard-charts {
+	width: 100%;
+	display: inline-block;
+}
+.vri-dashboard-charts {
+	margin: 20px 0;
+	padding: 15px 0;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+.vri-dashboard-charts h4 {
+	font-size: 22px;
+	font-weight: normal;
+	color:#006600;
+	text-transform: uppercase;
+	padding: 0px 25px 10px 0;
+	position: relative;
+	text-align: center;
+}
+.vri-dashboard-charts-wrapper {
+	margin: 0 auto;
+	display: table;
+}
+.vri-dashboard-chart-container {
+	background: none repeat scroll 0 0 #f6f6f6;
+    border: 1px solid #ddd;
+    display: inline-block;
+    float: left;
+    margin: 8px 8px;
+    padding: 0;
+}
+.vri-dashboard-chart-container .vri-dashboard-chart-date {
+	color: #22485d;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    padding: 8px 0;
+    border-bottom:1px solid #ddd;
+}
+.vri-dashboard-chart-container .donutChart {
+	display: block;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.vri-dashboard-next-bookings-block {
+	display: inline-block;
+	width: 100%;
+}
+.vri-dashboard-today-pickup-wrapper i, .vri-dashboard-today-dropoff-wrapper i {
+    margin-right: 5px;
+}
+.vri-dashboard-next-bookings {
+	border:2px solid #ddd;
+}
+.vri-dashboard-next-bookings h4 {
+	font-size: 22px;
+	font-weight: normal;
+	color: #006600;
+	text-transform: uppercase;
+	padding: 10px;
+	position: relative;
+	display: inline-block;
+}
+.vri-dashboard-next-bookings h4 i {
+    margin-right: 5px;
+}
+.vri-dashboard-refresh-container {
+	display: table;
+	margin: 10px auto 0;
+}
+.vri-dashboard-refresh-container > span {
+	display: inline-block;
+	float: left;
+	margin: 0 2px;
+}
+.vri-dashboard-refresh-container .vri-dashboard-refresh-head {
+	font-size: 22px;
+	font-weight: normal;
+	color: #22485d;
+	text-transform: uppercase;
+	padding: 7px 13px 10px 0;
+	position: relative;
+	text-align: center;
+	float: left;
+	display: inline-block;
+}
+.vri-dashboard-refresh-container .vri-dashboard-refresh-head .vri-dashboard-refresh-label {
+	display: inline-block;
+	float: left;
+	margin:0 8px 0 0;
+}
+.vri-dashboard-refresh-play {
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+.vri-dashboard-refresh-play:after {
+	content: "\25b6";
+	display: inline-block;
+	border-radius: 50%;
+	background: #22485d;
+	height: 30px;
+    line-height: 30px;
+    padding: 0;
+    width: 30px;
+	font-size: 15px;
+}
+.vri-dashboard-refresh-stop {
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+.vri-dashboard-refresh-stop:after {
+	content: "\25A0";
+	display: inline-block;
+	border-radius: 50%;
+	background: #22485d;
+	width: 30px;
+	height: 30px;
+	line-height: 25px;
+	font-size: 20px;
+	padding: 0;
+}
+.vri-dashboard-items-locked-block {
+	display: inline-block;
+	width: 100%;
+	margin: 20px 0 0;
+}
+.vri-dashboard-items-locked {
+	border:2px solid #ddd;
+}
+.vri-dashboard-items-locked h4 {
+	font-size: 22px;
+	font-weight: normal;
+	color: #22485d;
+	text-transform: uppercase;
+	padding: 10px 0 10px 65px;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+}
+.vri-dashboard-items-locked h4:before {
+	width: 45px;
+	height: 45pc;
+	content: "";
+	left: 15px;
+	top: 0;
+	background: url(resources/locked-icon.png) left top no-repeat;
+	position: absolute;
+}
+.vri-dashboard-items-locked h4 span {
+	display: inline-block;
+	margin: 0 0 0 5px;
+	color: #FF9326;
+}
+/* Dashboard - End */
+.vriorderinfoblock {
+	background: #f6f6f6 none repeat scroll 0 0;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	margin: 0 0 10px;
+	padding: 10px;
+}
+div.vriorderpartot {
+	background: #efefef none repeat scroll 0 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	display: block;
+	font-weight: bold;
+	margin: 10px 5px;
+	padding: 5px 10px;
+	width: 300px;
+}
+.vriapplydiscsp {
+	float: right;
+	cursor: pointer;
+}
+.vridiscenter {
+	display: none;
+	margin-top: 5px;
+	font-weight: normal;
+	padding:5px 0 0 0;
+	border-top:1px solid #ccc;
+}
+.vridiscenter-entry {
+	padding:3px 0;
+}
+.vridiscenter-label {
+	font-weight:bold;
+	display:inline-block;
+	min-width:110px;
+}
+.vridiscenter-entrycentered {
+	text-align: right;
+}
+.vridiscenter-entrycentered input {
+	background:#348741;
+	color:#fff;
+	border-radius:4px;
+}
+
+textarea.vriadminnotestarea {
+	width: 490px !important;
+	height: 240px !important;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 3px;
+}
+.vri-quickres-tbl input, .vri-quickres-tbl select {
+	vertical-align: middle !important;
+	margin: 0 !important;
+}
+.vri-quickres-tbl td {
+	padding: 4px 0;
+}
+.vri-quickres-tbl .input-append {
+	margin-bottom: 0 !important;
+}
+.vri-quickres-tbl .vri-quickres-lbl {
+	display: inline-block;
+	min-width: 150px;
+}
+
+.itemgroupcont {
+	padding-bottom: 5px;
+	width: 100%;
+}
+.itemgroup-left {
+	float: left;
+	margin-right: 10px;
+	min-width: 180px;
+}
+.itemgroup-right {
+	padding-left: 190px;
+}
+.itemgroup-right div {
+	display: block;
+	margin-bottom: 5px;
+}
+.itemgroup-right input {
+	margin: 0;
+}
+.itemgroup-right div .itemgroup-rel-name {
+	display: inline-block;
+	max-width: 160px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: middle;
+	white-space: nowrap;
+	width: 140px;
+}
+.itemgroup-right div .itemgroup-rel-units span {
+	display: inline-block;
+	margin: 0 4px 0 2px;
+}
+.itemgroup-right div .itemgroup-rel-units input[type="number"] {
+	max-width: 60px;
+}
+
+/* VikUpdater - Start */
+.vik-box-error {
+	padding: 15px 10px;
+	border: 2px dashed #900;
+	color: #900;
+	font-weight: bolder;
+}
+.vik-update-changelog {
+	padding: 0 10px;
+	border: 2px dashed #999;
+}
+.vik-update-changelog h2 {
+	margin-bottom: 25px;
+}
+.vik-update-changelog ul li strong {
+	display: inline-block;
+	width: 220px;
+}
+.vik-update-changelog div.box-separator {
+	border-top: 1px solid #bbb;
+	margin: 20px 0;
+}
+/* VikUpdater - End */
+
+/** VRI 1.6 - Start */
+i.vri-quest-popover {
+	color: #333;
+}
+i.icn-bigger {
+	font-size: larger;
+}
+i.icn-nomargin {
+	margin: 0 !important;
+}
+i.icn-float-left {
+	float: left;
+}
+i.icn-float-right {
+	float: right;
+}
+i.icn-clickable {
+	cursor: pointer;
+}
+i.vri-quest-popover {
+	color: #333;
+}
+i.vri-quest-popover:hover {
+	color: #22485d;
+}
+i.vri-icn-img {
+	font-size: 20px;
+}
+.vri-itementries-cont {
+	float: left;
+	display: inline-block;
+	margin: 0 5px 0 2px;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+.vri-itementry-cont {
+	display: block;
+}
+.vri-itementry-cont input {
+	display: inline-block;
+}
+.vri-itementry-cont label {
+	display: inline !important;
+}
+.vri-select-all {
+	display: block;
+	width: 180px;
+	margin: 0 0 5px 0;
+	padding: 3px 2px 3px 2px;
+	color: #000000;
+	background:#f0f0ee;
+	border-radius: 2px;
+	cursor: pointer;
+	text-align: center;
+}
+.promotr {
+	display: none;
+}
+#promovalidity {
+	display: inline-block;
+	padding-left: 5px;
+}
+input[type="number"] {
+	width: 60px !important;
+}
+.btn-primary .caret {
+    border-top: 0;
+        border-top-color: currentcolor;
+    border-bottom: 4px solid #FFF !important;
+    margin-top: 7px;
+    margin-bottom: 8px;
+}
+.vri-allorders-fm {
+	background: #eee;
+}
+#vri-search-tools-cont {
+    width: 100%;
+    display: inline-block;
+    padding: 0px !important;
+}
+i[class^="vriicn-"], i[class*=" vriicn-"] {
+    margin-right: 0.25em;
+}
+input[type="search"].select2-search__field {
+	height: auto !important;
+	margin-bottom: 2px !important;
+}
+.select2-search--dropdown .select2-search__field {
+	width: 100% !important;
+}
+.vri-allorders-fm #filter-bar, .vri-allorders-fm #vri-search-tools-cont {
+	margin-top: 0 !important;
+	height: auto !important;
+	background: #cdd8dd;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.vri-orderslist-table {
+	margin-top: 35px;
+}
+.vri-orderslist-table thead {
+	background: #d9dfe1;
+}
+.vri-orderslist-table thead th {
+	padding: 10px 10px;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #333;
+}
+.vri-orderslist-table thead th a, .vri-list-table thead th a {
+	color: #333;
+}
+.vri-orderslist-table thead th .vri-orderslist-activesort, .vri-orderslist-table thead th a:hover, 
+.vri-list-table thead th .vri-list-activesort, .vri-list-table thead th a:hover {
+	color: #02679A;
+	text-decoration: none;
+}
+.vri-orderslist-table thead th a > i, .vri-list-table thead th a > i {
+	margin-left: 5px;
+}
+.vri-orderslist-table tbody tr td {
+	vertical-align: middle;
+	font-size: 13px;
+	background: #fff !important;
+}
+.vri-orderslist-table tbody tr:hover td {
+	background: #f6f6f6 !important;
+}
+a.vri-orderid {
+	display: inline-block;
+	border: 1px solid #337ab7;
+	padding: 3px 8px;
+	color: #337ab7;
+	min-width: 15px;
+	text-align: center;
+}
+a.vri-orderid:hover, a.vri-orderid:focus, a.vri-orderid:active {
+	background: #337ab7;
+	color: #fff;
+	text-decoration: none;
+}
+.vri-orderslist-viewdet-link {
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	min-width: 60%;
+}
+.vri-orderslist-viewdet, .vri-orderslist-booktime-date {
+	font-size: 14px;
+	font-weight: bold;
+	color: #444;
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+.vri-orderslist-viewdet:hover {
+	color: #02679A;
+}
+.vri-orderslist-total-totpaid {
+	font-size: 11px;
+	font-weight: bold;
+}
+.vri-orderslist-viewdet-open {
+	float: right;
+}
+.vri-orderslist-viewdet-fulldate {
+	display: inline-block;
+	margin-right: 5px;
+}
+.vri-orderslist-viewdet-date {
+	display: block;
+}
+.vri-orderslist-viewdet-time, .vri-orderslist-booktime-time {
+	font-size: 11px;
+	font-weight: bold;
+	color: #666;
+}
+.vri-orderslist-viewdet-time span {
+	display: inline-block;
+}
+.vri-country-flag-left {
+	float: left;
+	margin: 0 5px 0 0;
+}
+.vri-orderslist-booktime-twrap {
+	display: inline-block;
+	min-width: 60px;
+}
+.vri-orderslist-booktime-hour {
+	color: #02679A;
+}
+span.label.vri-status-label {
+	padding: 5px 10px !important;
+	font-size: 12px;
+}
+.vri-bookingdet-topcontainer .vri-bookdet-container {
+	background: #f6f6f6;
+	padding: 15px 0 5px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 0;
+}
+.vri-bookdet-container {
+	margin-bottom: 50px;
+	text-align: center;
+	width: 100%;
+}
+.vri-bookdet-wrap {
+	display: inline-block;
+	margin: 0 3px 10px 0;
+	max-width: 250px;
+	min-width: 100px;
+	vertical-align: top;
+}
+.vri-bookdet-head {
+	border-bottom: 1px solid #ddd;
+	color: #707070;
+	margin: 0 0 5px;
+	overflow-wrap: break-word;
+	padding: 3px 10px;
+	text-align: center;
+	position: relative;
+}
+.vri-bookdet-foot {
+	font-size: 19px;
+	overflow-wrap: break-word;
+	text-align: center;
+	padding: 3px 15px;
+}
+.vri-country-flag-left {
+	float: left;
+	margin: 0 5px 0 0;
+}
+.vri-bookingdet-topcontainer .vri-bookingdet-innertop {
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid #ddd;
+	padding: 20px 0 0;
+	margin-bottom: -5px;
+}
+.vri-bookingdet-commands {
+	float: right;
+}
+.vri-bookingdet-command {
+	display: inline-block;
+	margin: 3px;
+}
+.vri-bookingdet-topcontainer .vri-bookingdet-tabs {
+	float: left;
+	text-align: center;
+	color: #888;
+}
+.vri-bookingdet-tab {
+	display: inline-block;
+	cursor: pointer;
+	padding: 11px 0px;
+	margin: 0 12px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.vri-bookingdet-tab-active {
+	border-bottom: 2px solid #2f782e;
+	color: #2f782e;
+}
+.vri-bookingdet-tab-cont {
+	background: #eee;
+	padding-top: 15px;
+	display: block;
+}
+.vri-bookingdet-innercontainer {
+	display: flex;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.vri-bookingdet-customer, .vri-bookingdet-admindata {
+	-webkit-flex: 0 0 20%;
+	-ms-flex: 0 0 20%;
+	flex: 0 0 20%;
+}
+.vri-bookingdet-innercontainer > div {
+	padding: 18px;
+}
+.vri-bookingdet-detcont, .vri-bookingdet-admin-entry {
+	background: #fff;
+	padding: 15px;
+	border-radius: 8px;
+	margin: 10px 0;
+}
+.vri-hidein-print .badge a {
+	color: #fff;
+	text-decoration: none;
+}
+.vri-hidein-print .badge:hover {
+	background: #777;
+}
+.vri-hidein-print .badge:hover a {
+	color: #fff;
+}
+.vri-bookingdet-detcont:first-child, .vri-bookingdet-admin-entry:first-child {
+	margin-top: 0;
+}
+.vri-bookingdet-detcont > div {
+	margin: 4px 0;
+}
+.vri-bookingdet-detcont > .vri-bookingdet-userdetail {
+	margin: 0 0 5px;
+	vertical-align: top;
+	display: inline-block;
+	width: 43%;
+	padding: 0 5px;
+}
+.vri-bookingdet-detcont .vri-bookingdet-userdetail-lbl {
+	display: block;
+	font-weight: bold;
+	font-size: .9em;
+	color: #666;
+}
+.vri-bookingdet-detcont .vri-bookingdet-userdetail-val {
+	word-wrap: break-word;
+}
+.vri-bookingdet-detcont label, .vri-bookingdet-admin-entry label {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.vri-bookingdet-summary, .vri-editbooking-summary {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.vri-bookingdet-summary .table-responsive {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0px 20px #0000001a;
+}
+.vri-bookingdet-summary .table {
+	margin-bottom: 0;
+}
+.vri-bookingdet-summary .table td {
+	padding: 10px 15px;
+}
+.vri-bookingdet-summary .table .vri-bookingdet-summary-item td {
+	padding: 15px;
+}
+.vri-bookingdet-summary .table-responsive tr:first-child td {
+	border-top: 0;
+}
+.vri-bookingdet-summary-itemnum {
+	font-size: 1.4em;
+	display: inline-block;
+	margin: 0 0 15px;
+}
+.vri-bookingdet-summary-itemnum i {
+	border: 1px solid #ddd;
+	padding: 5px;
+	border-radius: 3px;
+	margin-right: 6px;
+	color: #999;
+	background: #fbfbfb;
+}
+.vri-bookingdet-summary-itemname {
+	font-size: 1.4em;
+	display: inline-block;
+}
+.vri-bookingdet-summary-total {
+	background: #f6f8f6;
+	font-weight: bold;
+}
+.vrapplydiscsp {
+	float: right;
+	cursor: pointer;
+}
+.vri-bookingdet-summary-total .vri-bookingdet-summary-lbl, .vri-bookingdet-summary-total .vri-bookingdet-summary-cost {
+	font-size: 1.2em;
+}
+.vridiscenter-label {
+    font-weight: bold;
+    display: inline-block;
+    min-width: 50%;
+}
+#vridiscenter {
+	margin-top: 5px;
+	font-weight: normal;
+	padding: 5px 0 0 0;
+	border-top: 1px solid #ccc;
+}
+#vridiscenter .vridiscenter-entrycentered {
+	text-align: left;
+}
+.vri-bookingdet-innercontainer > .vri-bookingdet-noteslogs {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background: #fff;
+	border-radius: 8px;
+	margin: 18px 15px 20px;
+	padding: 0;
+}
+.vri-bookingdet-noteslogs-btns {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background: #f6f6f6;
+	padding: 0 20px;
+	border-bottom: 1px solid #ddd;
+}
+.vri-bookingdet-noteslogs-btns .vri-bookingdet-noteslogs-btn {
+	display: inline-block;
+}
+.vri-bookingdet-noteslogs-btn a {
+	color: #444;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-right: 20px;
+	padding: 12px 0;
+	display: inline-block;
+	color: #666;
+}
+.vri-bookingdet-noteslogs-btn-active a {
+	border-bottom: 2px solid #2f782e;
+	color: #2f782e;
+}
+.vri-bookingdet-noteslogs-cont {
+	padding: 10px;
+}
+textarea.vriadminnotestarea {
+	width: 490px !important;
+	height: 240px !important;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 3px;
+}
+.vri-bookingdet-noteslogs-cont textarea.vriadminnotestarea, .vri-editbooking-custarea textarea, .vri-receipt-notes-tarea textarea {
+	width: 100% !important;
+	box-sizing: border-box;
+	padding: 15px;
+	background: #fbfbfb;
+}
+.vri-editbooking-item-remove {
+	float: right;
+}
+.vri-editbooking-summary-item {
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0px 20px #0000001a;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+}
+.vri-editbooking-summary-item > div {
+	padding: 15px 15px 0;
+}
+.vri-editbooking-summary-item > .vri-editbooking-summary-item-head {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background: #f6f6f6;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 15px;
+}
+.vri-bookingdet-summary-itemnum {
+	font-size: 1.4em;
+	display: inline-block;
+	margin: 0 0 15px;
+}
+.vri-editbooking-item-quantity {
+	margin-top: 10px;
+}
+.vri-editbooking-item-quantity label {
+	font-weight: bold;
+}
+.vri-editbooking-summary-item > div > h4 {
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+.vri-editbooking-item-traveler-guestsinfo {
+	padding: 0 5px;
+}
+.vri-editbooking-item-traveler-guestsinfo > div {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.vri-editbooking-item-traveler-guestsinfo label {
+	font-size: 12px;
+	font-weight: bold;
+	color: #999;
+	margin-bottom: 2px;
+}
+.vri-editbooking-item-pricetypes-wrap, .vri-editbooking-item-options-wrap {
+	display: flex;
+	-ms-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.vri-editbooking-item-pricetypes .vri-editbooking-item-pricetype, .vri-editbooking-item-options .vri-editbooking-item-option {
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	box-shadow: 0px 2px 1px #0000001a;
+}
+.vri-editbooking-item-pricetypes .vri-editbooking-item-pricetype {
+	-ms-flex: 0 0 15%;
+	-webkit-flex: 0 0 15%;
+	flex: 0 0 15%;
+}
+.vri-editbooking-item-pricetypes .vri-editbooking-item-pricetype-active {
+	border: 1px solid #127019;
+}
+.vri-editbooking-item-pricetype > div, .vri-editbooking-item-option > div {
+	display: inline-block;
+	vertical-align: top;
+}
+.vri-editbooking-item-pricetypes .vri-editbooking-item-pricetype label, .vri-editbooking-item-options .vri-editbooking-item-option label {
+	color: #666;
+	font-weight: bold;
+}
+.vri-editbooking-item-pricetype-cost {
+	font-size: 18px;
+	font-weight: bold;
+}
+.vri-editbooking-summary-item input[type="number"], .vri-editbooking-summary-item input[type="text"] {
+	margin-bottom: 0;
+	background: #fbfbfb;
+}
+.vri-editbooking-item-pricetype-seltax {
+	margin-top: 5px;
+}
+.vri-editbooking-item-options .vri-editbooking-item-option {
+	-ms-flex: 0 0 15%;
+	-webkit-flex: 0 0 15%;
+	flex: 0 0 15%;
+}
+.vri-editbooking-item-option-price {
+	font-size: 14px;
+	font-weight: bold;
+}
+.vri-editbooking-item-option-inner {
+	margin-right: 15px;
+}
+.vri-editbooking-item-pricetype-check, .vri-editbooking-item-option-check {
+    float: right;
+    margin-top: 10px;
+}
+.vri-editbooking-item-delivery .vri-editbooking-item-option {
+	flex: 100%;
+}
+.vri-editbooking-item-delivery .vri-editbooking-item-option .vri-editbooking-item-option-inner {
+	display: block;
+}
+.vri-editbooking-item-delivery .vri-editbooking-item-option .vri-editbooking-item-option-check {
+	float: inherit;
+}
+.vri-editbooking-item-extracosts .vri-ebusy-addextracost {
+	text-transform: initial;
+}
+.vri-ebusy-addextracost {
+	margin-left: 50px;
+}
+.vri-editbooking-item-extracost {
+	margin: 5px;
+}
+.vri-editbooking-item-extracost > div {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px 0 0;
+}
+.vri-editbooking-summary-totpaid {
+	padding-bottom: 0;
+}
+.vri-editbooking-summary-totpaid .vri-editbooking-summary-item-head {
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.vri-editbooking-ordtot {
+	display: inline-block;
+}
+.vri-editbooking-ordtot label, .vri-editbooking-totpaid label {
+	font-size: 18px;
+	font-weight: bold;
+}
+.vri-editbooking-totpaid {
+	display: inline-block;
+	margin-right: 20px;
+	float: left;
+}
+.vri-editbooking-totdelivery {
+	display: inline-block;
+}
+.vri-editbooking-additem {
+	display: inline-block;
+	float: right;
+	margin-top: 15px;
+}
+.vri-info-overlay-block {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #00000080;
+	display: none;
+	z-index: 99999999 !important;
+}
+a.vri-info-overlay-close {
+	display: block;
+	height: 100%;
+	cursor: default;
+}
+.vri-info-overlay-content {
+	position: fixed;
+	left: 33.3%;
+	top: 20%;
+	width: 33.3%;
+	min-height: 40%;
+	z-index: 101;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0px 0px 15px 0 rgba(0,0,0,.4);
+	overflow: auto;
+}
+.vri-info-overlay-content h3 {
+	text-align: center;
+	margin-top: 0;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+}
+.vri-add-item-overlay {
+	padding: 0 10px;
+}
+.vri-add-item-entry-inline {
+	display: inline-block;
+	margin-right: 20px;
+	min-width: 120px;
+}
+.vri-center {
+	text-align: center;
+}
+.vri-quickres-wrapper {
+	display: block;
+	float: left;
+	width: 48%;
+}
+.vri-quickres-head {
+	background: #eee;
+	padding: 10px;
+	margin: 0 0 10px;
+	width: 100%;
+	display: inline-block;
+}
+.vri-quickres-head h4 {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.vri-quickres-head .vri-quickres-head-right {
+	display: inline-block;
+	float: right;
+}
+.vri-quickres-head .vri-quickres-head-right form {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.vri-config-param-cell i {
+	float: right;
+}
+.vrilosecarsp i {
+	color: #e10808;
+	padding: 4px;
+	font-size: 15px;
+	border-radius: 4px;
+	margin-right: 3px;
+}
+.vri-quickres-selwrap {
+	margin-right: 5px;
+}
+.vri-assign-customer {
+	cursor: pointer;
+	background: #fff;
+	color: #2384D3;
+	border-radius: 3px;
+	display: inline-block;
+	font-weight: bold;
+	border: 1px solid #2384D3;
+}
+.vri-assign-customer:hover {
+	background: #2384D3;
+	color: #fff;
+}
+.vri-assign-customer > i {
+	background: #2384D3;
+	color: #fff;
+	padding: 8px 10px;
+}
+.vri-assign-customer > span {
+	padding: 0 8px 0 3px;
+	display: inline-block;
+}
+#quickbsubmit i::before, .vri-calendar-cfields-bottom .icon-edit::before {
+	color: #fff;
+}
+.vri-avcalendars-wrapper {
+	display: block;
+	float: right;
+	width: 48%;
+	text-align: center;
+	border: 1px solid #ddd;
+	background: #fbfbfb;
+	padding: 10px;
+	border-radius: 4px;
+}
+.vri-avcalendars-itemphoto {
+	display: block;
+	text-align: center;
+	margin: 5px 0;
+}
+.vrmodelink {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	background: #F3F3F3;
+	display: inline-block;
+	color: #444;
+}
+.vrmodelink > i {
+	background: #E6E6E6;
+	padding: 6px;
+	border-right: 1px solid #ddd;
+}
+.vrmodelink > span {
+	display: inline-block;
+	padding: 0 8px 0 3px;
+}
+.vrmodelink:hover, .vrmodelink:visited {
+	text-decoration: none !important;
+	background: #E6E6E6;
+	color: #444;
+}
+.vrmodelink-active {
+	background: #fff !important;
+	border-color: #2f782e;
+	color: #2f782e;
+}
+.vrmodelink-active > i {
+	background: #2f782e;
+	color: #fff;
+}
+.vriadmincaltable td {
+	background: #f9f9f9;
+	font-size: 11px;
+	width: 45px;
+	padding: 0 !important;
+	text-align: center !important;
+	height: 25px;
+	vertical-align: middle !important;
+}
+.vriadmincaltrmon td {
+	background: #579c5d;
+	color: #fff;
+	font-weight: bold;
+	padding: 4px 0;
+}
+.vriadmincaltrmdays td {
+	background: #CCC;
+	text-align: center;
+}
+.vri-calendar-cfields-filler-overlay {
+	background-color: #00000080;
+	bottom: 0;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9000;
+}
+a.vri-info-overlay-close {
+	display: block;
+	height: 100%;
+	cursor: default;
+}
+.vri-calendar-cfields-filler {
+	display: none;
+	position: absolute;
+	left: 30%;
+	width: 40%;
+	height: 80%;
+	top: 10%;
+	padding: 15px;
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 0 4px #111;
+	overflow: auto;
+}
+.vri-calendar-cfields-search {
+	float: right;
+}
+#vri-searchcust-loading {
+	display: none;
+}
+#vri-searchcust-res {
+	display: none;
+}
+.vri-custsearchres-entry {
+	display: block;
+	background: #eee;
+	margin-bottom: 1px solid #ddd;
+	padding: 3px 5px;
+	margin: 2px 0;
+	font-size: 12px;
+}
+.vri-custsearchres-name {
+	display: inline-block;
+	min-width: 130px;
+}
+.vri-custsearchres-cflag {
+	float: right;
+}
+.vri-calendar-cfield-entry label {
+	display: block;
+	max-width: 40%;
+	font-weight: bold;
+	color: #666;
+	margin-bottom: 4px;
+}
+.vri-calendar-cfields-bottom {
+	padding-bottom: 15px;
+}
+.vri-custsearchres-entry span {
+	margin-right: 5px;
+}
+.vri-avov-toolbar {
+	background: #eee;
+	padding: 10px;
+	box-sizing: border-box;
+	height: auto !important;
+}
+.vri-avov-toolbar select {
+	margin-bottom: 0;
+}
+.vri-avov-toolbar .pull-right label {
+	margin-top: 5px;
+	float: left;
+}
+.vri-ratesoverview-itemsel-entry {
+	display: inline-block;
+	margin-right: 20px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	min-height: 60px;
+	padding: 4px 10px;
+	margin: 5px 0;
+	vertical-align: top;
+	background: #eee;
+}
+.vri-ratesoverview-itemsel-block label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 9px;
+}
+.vri-sel2-font {
+	font-size: 13px !important;
+}
+.vri-smstpl-bgroup {
+    white-space: inherit !important;
+}
+.vri-editbooking-custarea textarea {
+	height: 250px;
+	max-height: 400px;
+}
+.table-responsive, .vri-table-responsive {
+    width: 100%;
+    overflow-y: auto;
+}
+.table-responsive table {
+	margin-bottom: 0;
+}
+.vriadminfaresctitle {
+	margin-bottom: 20px;
+}
+.vri-item-title {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+/** VRI 1.6 - End */
+
+@media screen and (max-width: 1400px) {
+	.vri-quickres-wrapper, .vri-avcalendars-wrapper {
+    	width: 100%;
+    	float: none;
+    	box-sizing: border-box;
+	}
+}
+@media screen and (max-width: 1350px) {
+	#filter-bar {
+		height: auto !important;
+	}
+	.vri-bookingdet-detcont > .vri-bookingdet-userdetail {
+		width: auto;
+		display: block;
+		margin: 3px;
+	}
+	.vriadmincaltable td {
+		padding: 5px 0 !important;
+	}
+}
+@media screen and (max-width: 940px) {
+	.vri-editbooking-item-options .vri-editbooking-item-option, .vri-editbooking-item-pricetypes .vri-editbooking-item-pricetype {
+	    -webkit-flex: 1;
+	    -ms-flex: 1;
+	    flex: 1;
+	}
+	.vri-dashboard-today-bookings {
+		flex-wrap: wrap;
+	}
+	.vri-dashboard-today-pickup-wrapper, .vri-dashboard-today-dropoff-wrapper {
+		flex: 100%;
+	}
+	.vri-dashboard-today-pickup-wrapper {
+		margin: 0 0 10px 0;
+	}
+	.vri-dashboard-today-dropoff-wrapper h4 {
+		float: left;
+	}
+}
+@media screen and (max-width: 780px) {
+	.vri-bookingdet-customer, .vri-bookingdet-admindata {
+		-webkit-flex: 100%;
+		-ms-flex: 100%;
+		flex: 100%;
+	}
+	.vri-bookingdet-detcont > .vri-bookingdet-userdetail {
+	    width: 45%;
+	    display: inline-block;
+	}
+	.vri-bookingdet-summary, .vri-editbooking-summary {
+    	padding-top: 0 !important;
+	}
+	.table-responsive, .vri-table-responsive {
+	    width: 100%;
+	    margin-bottom: 15px;
+	    overflow-y: hidden;
+	    -ms-overflow-style: -ms-autohiding-scrollbar;
+	    border: 1px solid #ddd;
+	}
+	.table-responsive > .table, .vri-table-responsive > .vri-table {
+	    margin-bottom: 0;
+	}
+
+}
+@media screen and (max-width: 740px) {
+	.vri-bookingdet-summary, .vri-editbooking-summary {
+	    flex: auto;
+	    width: 100%;
+	    box-sizing: border-box;
+	}
+	.vri-fares-tabs {
+		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 550px) {
+	.vri-editbooking-item-options .vri-editbooking-item-option, .vri-editbooking-item-pricetypes .vri-editbooking-item-pricetype {
+	    -webkit-flex: 100%;
+	    -ms-flex: 100%;
+	    flex: 100%;
+	}
+	img.maxninety {
+		display: none;
+	}
+	.vri-quickres-head .vri-quickres-head-right {
+		display: block;
+		float: none;
+	}
+	#vriustdatatxtarea {
+		width: 100% !important;
+	}
+}

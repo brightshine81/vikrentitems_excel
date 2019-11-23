@@ -1,0 +1,3110 @@
+﻿input[type="submit"], button {
+	cursor: pointer;
+}
+.err {
+    background: url("resources/images/error-msg.png") no-repeat scroll 10px center !important;
+    border: 1px solid #DDDDDD !important;
+    border-radius: 5px;
+    color: #D90000;
+    font-family: "Century Gothic",Tahoma,Arial;
+    font-weight: bold;
+    margin: 15px 0 20px;
+    padding: 20px 0 20px 60px !important;
+}
+.warn {
+    background: url("resources/images/warning-msg.png") no-repeat scroll 10px center !important;
+    border: 1px solid #DDDDDD !important;
+    border-radius: 5px;
+    color: #CC9A04;
+    font-family: "Century Gothic",Tahoma,Arial;
+    font-weight: bold;
+    margin: 15px 0 20px;
+    padding: 20px 0 20px 60px !important;
+}
+.successmade {
+    background: url("resources/images/success-msg.png") no-repeat scroll 10px center !important;
+    border: 1px solid #DDDDDD !important;
+    border-radius: 5px;
+    color: #196A19;
+    font-family: "Century Gothic",Tahoma,Arial;
+    font-weight: bold;
+    margin: 15px 0 20px;
+    padding: 20px 0 20px 60px !important;
+}
+.vrilocationbox {
+	background: none repeat scroll 0 0 #F6F6F6;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+.vri-itemdet-priceblock {
+    display: none;
+}
+.vrisfentrytime {
+    display: none !important;
+}
+/*.item_options.table-responsive tr:nth-child(3) {
+	 border-top: 1px solid #fff; 
+     border-bottom: 1px solid #fff; 
+}
+.item_options.table-responsive tr:nth-child(2) {
+     border-top: 1px solid #fff; 
+    border-bottom: 1px solid #fff;
+}*/
+
+.item_options.table-responsive tr:nth-child(2n+2)
+{
+	border-bottom: 1px solid #fff;
+}
+.item_options.table-responsive td{
+	border: none !important;
+}
+.vricontinuerentdiv, .vrichangedatesdiv a{
+    display: none !important;
+}
+.vrilocationbox h3 {
+	font-weight:bold;
+	font-size:15px !important;
+	margin:0 0 3px 0;
+}
+.vri-oconfirm-middlep {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 20px;
+}
+.vri-oconfirm-middlep > div {
+	flex: 1;
+}
+.vri-coupon-outer {
+	background: none repeat scroll 0 0 #f6f6f6;
+	border: 1px dashed #a2d1ad;
+	color: #666;
+	font-size: 14px;
+	margin: 0;
+	padding: 15px;
+	margin: 5px;
+}
+.vri-coupon-outer form {
+	margin-bottom: 0;
+}
+.vrientercoupon span {
+	display: block;
+	padding: 0 0 5px 0;
+}
+.vrientercoupon .vriinputcoupon, .vri-enterpin-top #vri-pincode-inp {
+	background: none repeat scroll 0 0 #fdfdfd;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: none;
+	font-family: "Century Gothic",Tahoma,Arial;
+	font-size: 12px;
+	padding: 6px 8px;
+	float: left;
+}
+.vrientercoupon .vrisubmitcoupon, .vri-enterpin-block .vri-pincode-sbmt {
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 7px;
+	margin: 0 0 0 5px;
+	width: auto;
+}
+.vrientercoupon .vrisubmitcoupon:hover {
+	background:#328432;
+	border: 1px solid #398439;
+	transition: all 400ms ease-in-out 0s;
+}
+.vrientercoupon .vrisubmitcoupon {
+	background: #159049;
+	border: 1px solid #398439;
+	color: #FFF;
+}
+.vri-enterpin-block {
+    background: #f6f6f6;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 5px;
+}
+.vri-enterpin-block .vri-enterpin-top span {
+    display: block;
+    margin-bottom: 3px;
+}
+.vri-enterpin-block .vri-enterpin-top span > span {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.vri-enterpin-block .vri-pincode-sbmt {
+	background: #337ab7;
+	border: 1px solid #2e6da4;
+	color: #fff;
+	box-shadow: none;
+	text-shadow: none;
+}
+.vri-enterpin-block .vri-pincode-sbmt:hover {
+	background: #286090;
+	border: 1px solid #204d74;
+	color: #fff;
+}
+.vrilocationbox .vriloclistloctimebox {
+	color:#00647E;
+}
+.vrilocationbox .vriloclistlocdescr {
+	margin:10px 0 0 0;
+}
+.vrilocationbox .vriloclistlocdescr p {
+	margin: 0px 0 5px 0;	
+}
+.vrivordudata {
+	width:91%;
+	background:#f6f6f6;
+	border:1px solid #ddd;
+	padding:15px;
+	line-height:1.6em;
+	margin:25px auto 5px auto;
+	font-size:13px;
+	display: table;
+}
+.vrivordudata p {
+	margin:0;
+	padding:0;
+}
+.vrivordudata span {
+	display:block;
+}
+.vrivorditeminfo {
+	line-height:1.8em;
+	font-size:14px;
+	margin:15px 0 0 0;
+	background:#fbfbfb;
+	border:1px solid #ddd;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	width:60%;
+	padding:15px;
+}
+.vrivorditeminfo p {
+	margin:0;
+	padding:0;
+}
+.vrivordcosts .vrivordcoststot .vri-ord-tot-cost {
+	margin-left: auto;
+}
+.vrivordpaybutton {
+	text-align: center;
+	margin:10px 0;
+}
+.vrivorditeminfo .vrivorditeminfotitle {
+	font-weight:bold;
+}
+.vrivordudata .vrivordudatatitle {
+	color: #666666;
+    font-size: 16px;
+    text-transform: uppercase;
+	padding:0 0 5px 0;
+}
+.item_container {
+	overflow: hidden;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #cccccc;
+	width: 97%;
+	padding: 8px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.imgresult {
+	padding:1px;
+	border:1px solid #ddd;
+}
+.item_img_box {
+	/*float: left;*/
+	margin-right: 12px;
+	border:1px solid #eee;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	padding:10px;
+}
+
+div.item_img_box img {
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+.item_description_box {
+	display: inline;
+}
+
+.item_carats {
+	margin:10px 0 0 0;
+	display: block;
+}
+.item_carats table td {
+    padding: 10px !important;
+	margin:0 3px 5px 0;
+	border-right:1px dotted #ccc;
+	vertical-align:middle;
+}
+.item_carats table tr td:last-child {
+	border:0;
+}
+.vrhword {
+	font-size: 15px;
+	font-weight:bold;
+	display: block;
+	text-transform:uppercase;
+}
+
+.item_prices {
+	border: 1px solid #ddd;
+	font-size:13px;
+}
+.item_prices h4, .item_options h4 {
+	font-size: 16px;
+	background: #222222;
+	padding: 10px;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.item_prices table, .item_options table {
+	border-spacing:0;
+ 	border-collapse:collapse;
+ 	margin-bottom: 0;
+ 	border: 0;
+}
+.item_prices table td, .item_options table td {
+	border-bottom:1px solid #eee;
+	border-spacing:0;
+ 	border-collapse:collapse;
+	padding: 10px 15px !important;
+}
+.item_prices table tr:last-child td {
+	border:0;
+}
+.item_prices table td:last-child {
+	text-align: right;
+	padding-right:15px !important;
+}
+.vriarsfound {
+	font-size:14px;
+	color:#999;
+	border-bottom:1px solid #ddd;
+	padding:0 0 5px 0;
+}
+.item_options {
+	border: 1px solid #ddd;
+	font-size:13px;
+	margin: 15px 0;
+}
+.item_options .vrioptionaldescr {
+	padding:0 0 10px 0;
+}
+.item_options .vrhword {
+	margin:0 0 10px 0;
+}
+.item_options p {
+	padding:0;
+	margin:0;
+}
+.item_options table td:last-child {
+	text-align: right !important;
+	padding-right:10px;
+}
+.item_options table td:first-child {
+	width:15px;
+}
+.vri-inp-numb {
+	width: 35px !important;
+}
+.item_buttons_box {
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+	margin:15px 0 0 0;
+}
+.item_buttons_box .booknow {
+	margin:0 0 15px 0;
+	width: auto;
+	cursor: pointer;
+}
+.item_buttons_box .goback {
+	float: left;
+}
+.vrirentalriepilogo {
+	color: #666;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.vrirentforlocs {
+	float:none;
+	clear:both;
+}
+.vrirentforlocs .vrirentalfor {
+	margin-bottom: 10px;
+}
+.vrirentalfor .vrirentalforone {
+	margin: 0;
+    margin-top: 25px;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.vrirentalfordate {
+	font-size:15px;
+	padding:0 2px;
+	color:#000;
+}
+.vrirentalfor > span {
+	display: inline-block;
+    font-size: 24px;
+    margin: 0 0 8px;
+}
+.vrirentalfortwo {
+	display:block;
+	font-size:12px;
+	color:#666;
+	padding:8px 0 0 0;
+	text-transform:uppercase;
+}
+.vrirentalfortwo p {
+	display:block;
+	margin:0 0 5px 0;
+	padding:0;
+}
+.vritableorder {
+	line-height:1.6em;
+	margin:15px 0 20px 0;
+	width:100%;
+}
+.vritableorder .vritableorderfrow {
+	border-bottom:1px solid #ddd;
+}
+.vritableorder tr td {
+	padding: 10px 15px;
+	text-align: center;
+}
+.vritableorder tr td:first-child {
+	text-align: left;
+}
+.vritableorder .vritableorderfrow td {
+	color: #006600;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+.vritableorder .vriordrowtotal {
+	font-size:13px;
+}
+.vritableorder .vriordrowtotal .vritotalord {
+	font-size: 20px;
+}
+.vritableorder .vriordrowtotal td { 
+	font-weight:normal !important;
+	font-size: 13px;
+	background: #606060 none repeat scroll 0 0;
+    padding: 10px 0 10px 10px;
+    vertical-align: middle;
+}
+.vripickuploc {
+	background: none repeat scroll 0 0 #FBFBFB;
+    border: 1px solid #C9E9FC;
+    border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+    color: #666666;
+    float: left;
+    font-size: 16px;
+    margin: 0 15px 20px 0;
+    padding: 10px;
+}
+.vrilocsboxsum {
+	float:right;
+}
+.vridropoffloc {
+	font-size:16px;
+	margin:0;
+	padding:0;
+	color:#666;
+	background: none repeat scroll 0 0 #FBFBFB;
+    border: 1px solid #C9E9FC;
+    border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-webkit-border-radius: 4px 4px 4px 4px;
+	padding: 10px;
+	margin:0 0 20px 0;
+	float:left;
+}
+.vridropoffloc + form {
+	clear:both;
+	float:none;
+	padding:10px 0 10px 0;
+	margin:15px 0 0px 0;
+	border-top:1px solid #eee;
+}
+.vriseparatorcflong {
+	font-size:11px;
+	padding:15px 0 10px;
+	color:#666;
+}
+.vrichoosepayment {
+	font-size:16px;
+	text-transform:uppercase;
+	padding:10px 0 10px 0 !important;
+	color:#666;
+	margin:0;
+}
+.vrichoosepayment+ul {
+	margin:0;
+	padding:0;
+}
+.vrichoosepayment+ul li {
+	display:inline;
+}
+.vripickuploc .vripickuplocname, .vridropoffloc .vridropofflocname {
+	display:block;
+	font-size:12px;
+	padding:5px 0 0 0;
+	font-weight:bold;
+}
+.vricustomfields .vriseparatorcf {
+	font-size:16px;
+	text-transform:uppercase;
+	padding:10px 0 10px 0 !important;
+	color:#666;
+}
+
+.item_disclaimer {
+	overflow: hidden;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: 1px solid #cccccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 8px;
+}
+
+.item_title {
+	margin-bottom: 13px;
+}
+
+.item_separator {
+	margin-top: 15px;
+}
+
+.item_result {
+	overflow: hidden;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border: 2px solid #cccccc;
+	width: 98%;
+	padding: 8px;
+}
+
+.vrisrowprice .vrisrowpricediv {
+	background:#eee;
+	border-radius: 10px;
+	padding:8px !important;
+	color:#00647E;
+	width:90px;
+	text-align:center;
+	border:1px solid #ddd;
+}
+.vrisrowprice .vrisrowpricediv .vristartfrom {
+	font-size:11px;
+	display:block;
+}
+.vrisrowprice .vrisrowpricediv .item_cost {
+	font-size:20px;
+	font-weight:bold;
+	display:block;
+}
+.vrisearchcaratt td {
+	padding:10px !important;
+	font-size:11px;
+	border-bottom:1px dotted #ccc;
+}
+.vrisearchcaratt tr:last-child td {
+	border:0;
+}
+.vrirowcname {
+	font-size:14px;
+	font-weight:bold;
+}
+
+.vrirowcdescr p {
+	margin:0 0 3px 0;
+	padding:0;
+}
+
+.vrirequired {
+	color: #ff0000;
+}
+
+.vriinput {
+	background: none repeat scroll 0 0 #fdfdfd;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: none;
+	color: #666;
+	font-family: "Century Gothic",Tahoma,Arial;
+	font-size: 12px;
+	padding: 5px 8px;
+	width: 285px;
+}
+.vriinput:focus {
+	outline: none;
+	border-color:#159049;
+	transition: all 400ms ease-in-out 0s;
+}
+.vritextarea {
+	background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    float: left;
+    font-size: 14px;
+    height: 200px;
+    min-width: 323px;
+    line-height: 1.42857;
+    margin: 0;
+    padding: 6px 12px;
+    position: relative;
+    transition: all 400ms ease-in-out 0s;
+    width: auto !important;
+    z-index: 2;
+}
+.vritextarea:focus {
+	outline: none;
+	border-color:#159049;
+	transition: all 400ms ease-in-out 0s;
+}
+.vri-oconfirm-mainf-cont .booknow {
+	width: auto;
+	margin: 0 auto;
+	display: table;
+}
+.vri-oconfirm-paym-block {
+	margin: 20px 0;
+	text-align: center;
+}
+.vri-oconfirm-paym-block .vri-medium-header {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.vri-oconfirm-paym-block ul li {
+    display: inline-block;
+    list-style-type: none;
+    background: #606060;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 4px;
+}
+.vri-oconfirm-paym-block ul li label {
+    margin-left: 5px;
+}
+.vri-oconfirm-paym-block .vri-gpay-licont-active {
+    border: 1px solid #159049;
+    background: #fff;
+}
+.vricustomfields .vriseparatorcf {
+	background: none repeat scroll 0 0 #f6f6f6;
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0 0;
+    padding: 10px 0 10px 20px !important;
+    text-transform: uppercase;
+}
+.vridivcustomfield {
+    display: inline-block;
+    margin: 0 45px 13px 0;
+}
+.vricustomfldinfo {
+    width: 99%;
+}
+.vrilist {
+	list-style-type: none;
+}
+
+.vrilist {
+	margin:0;
+	padding:0;
+}
+.vrilist li {
+	list-style-type: none;
+	margin:0px 10px 15px 0px !important;
+	border-radius: 7px;
+	padding:15px !important;
+	-moz-border-radius: 7px;
+	webkit-border-radius: 7px;
+	border: 2px solid #CCCCCC;
+	display:inline-block;
+	width:95%;
+}
+.vrilist li:before {
+}
+.vrilist li span {
+}
+
+img.vrilistimg {
+	margin: 0 15px 0 0;
+    max-width: 100%;
+}
+
+.vrilistitemname {
+	display: block;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.vrilistitemcat {
+	color: #aaa;
+    display: block;
+    font-size: 12px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.vrilistitemdescr {
+	font-size: 14px;
+	margin: 8px 0 0;
+}
+.vrilistcostdivcont, .vri-result-costdivcont {
+	text-align: left;
+	padding: 15px 20px;
+}
+.vri-result-itemdescr {
+	font-size: 14px;
+	margin: 8px 0 0;
+}
+.vri-search-selectquantity {
+	margin-top: 5px;
+}
+.vri-search-selectquantity label {
+	display: block;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+.vri-list-item-img {
+	display: inline-block;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 20%;
+}
+.vri-list-item-descr {
+	overflow: hidden;
+    padding: 15px;
+}
+.vrilistdivcost .vriliststartfrom, 
+.vriliststartfromtext, .vristartfrom,
+.vri-result-divcost .vriliststartfrom {
+	margin:0;
+    font-size: 11px;
+	text-transform:uppercase;
+	display: block;
+	text-align: left;
+	font-weight: bold;
+}
+.item_cost {
+	color: #00647E;
+	font-size: 32px;
+    color: #006600;
+}
+.vristartfrom {
+	color: #006600;
+}
+.vriliststartfrom, .vriliststartfromtext {
+	color: #777;
+}
+.vrilistdivcost .item_cost {
+    font-size: 32px;
+}
+.vrisrowpricediv {
+	float:right;
+}
+.vrisearchrightbookdiv {
+	display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+.vriselectquantitydiv, .vrisearchsubdiv {
+	display:inline-block;
+}
+.vrilistgoon {
+	background:#006600;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 7px 10px;
+    text-align: center;
+	border:1px solid #003300;
+	display:inline !important;
+}
+.vrilistgoon:hover {
+	background:#004600;
+}
+.vri-pagination {
+	display: inline-block;
+	width: 100%;
+	margin: 15px 0 0;
+}
+.vri-pagination ul {
+	display: block;
+	text-align: center;
+}
+.vri-pagination ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0 3px;
+}
+.vri-pagination ul li .pagenav {
+    border-radius: 2px;
+    padding: 1px 5px 3px;
+}
+.vri-pagination ul li span.pagenav {
+    background: #f2f2f2 none repeat scroll 0 0;
+    border: 1px solid #e7e7e7;
+    color: #999;
+}
+.vri-pagination ul li a.pagenav {
+    background: #eee none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #006600;
+    -webkit-transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+	transition: all 400ms ease-in-out 0s;
+}
+.vri-pagination ul li a.pagenav:hover {
+	background: #ddd;
+	text-decoration: none;
+}
+.vrilistgoonlist {
+	display:block;
+	text-transform:uppecase;
+	margin:5px 0 0 0;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+	transition: all 400ms ease-in-out 0s;
+}
+.vrilistgoonlist a, .vricontinue, .booknow, .vricompleteorderdiv a, .vrirelitemsubmit {
+	font-size:13px;
+	text-transform:uppercase;
+	text-decoration: none !important;
+	color: #fff !important;
+	font-weight:bold;
+	background:#159049;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:9px 15px;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+	transition: all 400ms ease-in-out 0s;
+	border:0;
+	display: inline-block;
+}
+.vrilistgoonlist a:hover, .vricontinue:hover, .booknow:hover, .vricompleteorderdiv a:hover, .vrirelitemsubmit:hover {
+	background:#328432;
+	color: #fff !important;
+	text-decoration: none;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+	transition: all 400ms ease-in-out 0s;
+}
+.goback a {
+	font-size:13px;
+	text-transform:uppercase;
+	color: #777;
+	font-weight:bold;
+	background:#eee;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:9px 15px;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	-o-transition: all 400ms ease-in-out 0s;
+	transition: all 400ms ease-in-out 0s;
+	border:1px solid #ddd;
+}
+.goback a:hover {
+	color: #777;
+	text-decoration: none;
+	background: #fbfbfb;
+}
+.vricontinue {
+	padding:9px 35px;
+	cursor: pointer;
+}
+.vri-search-subdiv .vricontinue {
+	width: auto;
+}
+.vrilistgoon a {
+	color: #fff;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+form .vriselectm {
+	background: none repeat scroll 0 0 #fbfbfb;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    font-family: "Century Gothic",Tahoma,Arial;
+    font-size: 12px !important;
+    line-height: 12px;
+    padding: 6px !important;
+	margin:10px 0 0 0;
+	height: auto;
+}
+.vrilistsep {
+	display: block;
+	margin:3px 0 10px 0;
+	height:10px;
+}
+
+.vritdfree{
+	color: #222;
+	background: #f9f9f9;
+}
+.vritdfree a {
+	color: #333 !important;
+	text-decoration: none !important;
+}
+
+.vritdbusy{
+	color: #fff;
+	background: #b20000;
+}
+.vritdbusy a {
+	color: #fff;
+}
+
+.vritdwarning{
+	color: #fff;
+	background: #f89d33;
+}
+.vritdwarning a {
+	color: #fff !important;
+}
+
+.vritdclosedday {
+	color: #222;
+	opacity: 0.5;
+}
+
+.vridetsep {
+	margin-bottom: 5px;
+    margin-top: 8px;
+}
+.vrilegendediv {
+	clear:both;
+	margin: 20px 0 15px;
+	float:none;
+}
+.vrilegenda {
+	margin-right: 15px;
+	font-weight: bold;
+	padding:5px 0;
+}
+
+.vrilegfree {
+	overflow: hidden;
+	width: 10px;
+	height: 10px;
+	background: #f9f9f9;
+	display: inline;
+	padding: 0 4px 0 4px;
+	margin: 0 3px 0 0;
+	border:1px solid #ddd;
+}
+
+.vrilegwarning {
+	overflow: hidden;
+	width: 10px;
+	height: 10px;
+	background: #f89d33;
+	display: inline;
+	padding: 0 5px 0 5px;
+}
+.vrilegbusy {
+	overflow: hidden;
+	width: 10px;
+	height: 10px;
+	background: #b20000;
+	display: inline;
+	padding: 0 5px 0 5px;
+}
+
+.vricaldivcont {
+	border: 1px solid #ddd;
+    display: inline-block;
+    margin: 0 5px 8px 0;
+    padding: 3px;
+    vertical-align: top;
+}
+.vrical {
+    border: 0 none;
+    border-collapse: separate;
+    border-spacing: 2px;
+    box-sizing: inherit;
+    width: 100%;
+    margin-bottom: 0;
+}
+.vricaldays {
+	padding:2px;
+}
+.vrical tr:first-child td {
+	border:0;
+	background: #006600;
+	padding: 5px 0;
+	color: #fff;
+	text-transform: uppercase;
+}
+.vrical tr td {
+    font-size: 11px;
+    padding: 5px 3px;
+    border: 1px solid #eee;
+    box-sizing: padding-box;
+    height: 22px;
+    padding: 0;
+    width: 27px;
+    vertical-align: middle;
+    text-align: center;
+}
+.vrical tr td > * {
+	display: block;
+	padding: 4px;
+}
+.vrical tr td > a {
+	text-decoration: none;
+}
+.vrical tr td > a:hover {
+	background: transparent;
+	color: #fff;
+	text-decoration: none;
+}
+.vricaldays td {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 3px;
+    text-align: center;
+    border:0 !important;
+    text-transform: uppercase;
+}
+.vricalcontainer {
+	border:0;
+	border-spacing:0;
+	border-collapse: collapse;
+}
+.vricalcontainer td {
+	border: 0 none;
+    margin: 5px;
+	padding: 5px 5px 5px 0;
+}
+.vricalcontainer .vrical {
+	border-radius:4px;
+}
+.vricalcontainer .vrical .vriitdetmonthnam {
+	background:#FBFBFB;
+}
+.vri-hourlycal-container .vrical tr td:first-child {
+	background: #e7e7e7;
+	color: inherit;
+	font-weight: bold;
+	border-right: 1px solid #ddd;
+}
+.vri-hourlycal-container .vrical tr td {
+	vertical-align: middle;
+}
+.vrilistitemcarats img {
+	float:left;
+}
+.vri-medium-header {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.item_moreimages {
+	max-width: 250px;
+	overflow: hidden;
+	margin:5px 0 0 0;
+}
+
+.item_moreimages img {
+	margin-right: 3px;
+	padding: 1px;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	width:70px;
+}
+.item_moreimages img:hover {
+	opacity:0.7;
+}
+
+.loginregistercont {
+	width: 100%;
+}
+
+.registerblock {
+	width: 40%;
+	float: left;
+	background:#f6f6f6;
+	border:1px solid #ddd;
+	padding:15px;
+	margin:0 15px 0 0;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+.registerblock h3, .loginblock h3 {
+	color: #666666;
+    font-size: 16px;
+    text-transform: uppercase;
+	padding:10px 0;
+}
+.registerblock table {
+	width:80%;
+}
+
+.loginblock {
+	width: 40%;
+	float: left;
+	background:#f6f6f6;
+	border:1px solid #ddd;
+	padding:15px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+.vrilocationsmapdiv {
+	width:100%;
+	text-align:center;
+	font-size:12px;
+	display: inline-block;
+}
+.vrilocationsmapdiv a {
+	padding: 15px 10px;
+	display:block;
+	text-decoration: none;
+	text-align: center;
+}
+
+#vrimapcanvas {
+	border: 8px solid #cccccc;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin:0 auto;
+	box-shadow:0 0 5px #bbb;
+	-moz-box-shadow:0 0 5px #bbb;
+	-webkit-box-shadow:0 0 5px #bbb;
+}
+
+#map-canvas {
+	position: fixed !important;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.vrigmapinfow {
+	font-family:"Century Gothic", Tahoma, Arial;
+	padding: 3px;
+	color:#555;
+}
+
+.vrigmapinfowdescr {
+	font-size:12px;
+}
+
+.vrigmapinfowdescr p {
+	margin:0;
+	padding:0 0 5px 0;
+}
+
+.vrigmapinfow h3{
+	font-size: 15px;
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+/*** custom ***/
+.vridivsearch {
+	padding:10px;
+	background:#fbfbfb;
+	border:1px solid #eee;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	width:96%;
+	clear:both;
+	float:none;
+	margin:0px 0 0 0;
+	display:inline-block;
+	box-sizing: border-box;
+}
+.vri-bookform-container  {
+	padding:20px;
+	background:#222222;
+	border:1px solid #eee;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	clear:both;
+	float:none;
+	margin:0px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vri-bookform-container .vri-medium-header {
+	flex: 100%;
+}
+.vri-bookform-container .vridivsearch {
+	background: transparent;
+	border:0;
+	width: auto;
+	padding: 0;
+	flex: 1;
+	order: 0;
+}
+.vri-bookform-container .vrilocationsbox {
+	order: 2;
+	flex-basis: 200px;
+}
+.vri-bookform-container .vrilocationsbox .vrilocationsmapdiv {
+	background: #eee;
+	text-transform: uppercase;
+	color: #444;
+	font-weight: bold;
+}
+.vri-bookform-container .vrilocationsbox .vrilocationsmapdiv span {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.vridivsearch .ui-datepicker-trigger {
+	margin:0 10px 0 0;
+}
+.vridivsearch form table td select, .vridivsearch form table td input {
+	background:#fefefe;
+	border:1px solid #ddd;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	color:#666;
+	padding:6px !important;
+	font-size:12px !important;
+	line-height:12px;
+	font-family:"Century Gothic", Tahoma, Arial;
+}
+.vridivsearch form .vricalform input[type^="submit"],
+.vriordcancformbox table td input.button {
+	background:#159049;
+	border:0;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	margin:10px 0 0 0;
+	font-size:14px !important;
+	cursor:pointer;
+	color:#fff;
+	font-weight:bold;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	transition: all 400ms ease-in-out 0s;
+}
+.vriordcancformbox table td input.button {
+	padding: 5px 10px;
+}
+.vridivsearch form .vricalform input[type^="submit"]:hover, #vricalculate:hover,
+.vriordcancformbox table td input.button:hover {
+	background:#10733a;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	transition: all 400ms ease-in-out 0s;
+}
+#vricalculate {
+	background:#159049;
+	border:0;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	margin:10px 0 0 5px;
+	font-size:14px !important;
+	cursor:pointer;
+	color:#fff;
+	font-weight:400;
+	-webkit-transition: all 400ms ease-in-out 0s;
+	-moz-transition: all 400ms ease-in-out 0s;
+	transition: all 400ms ease-in-out 0s;
+	padding: 5px 10px;
+	display: inline-block;
+	text-align: center;
+}
+.ui-helper-clearfix {
+	z-index:10000 !important;
+}
+.ui-datepicker-trigger {
+	margin:0 0 0 2px;
+}
+.dailyprices {
+	font-size:14px;
+	line-height:34px;
+}
+.vripaymentchangetot {
+	background:#FBFBFB;
+	border:1px solid #C9E9FC;
+	border-radius:4px;
+	padding:10px;
+	font-size:16px;
+	color:#666;
+	display:block;
+}
+.vripaymentchangetot .vriorddiffpayment {
+	font-weight:bold;
+	color:#144D5C;
+	font-size:18px;
+}
+.vrioptionforcequant {
+	padding: 5px 10px;
+	background:#606060;
+	border:1px solid #ddd;
+}
+.item_prices input[type="radio"] {
+	margin-right: 0;
+}
+
+/*** VikRentItems 1.1 ***/
+.vriuserorderstable {
+	width: 100%;
+	padding: 5px;
+}
+
+.vriuserorderstablerow td {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+p.vriuserordersparag {
+	font-style: italic;
+	padding: 5px;
+}
+.vriprintdiv {
+	text-align: right;
+}
+.vriprintdiv a img {
+	border: 0;
+}
+.vriordcancbox {
+	float: right;
+	border: 1px solid #DDD;
+	border-radius: 4px 4px 4px 4px;
+	font-size: 14px;
+	line-height: 2em;
+	margin: 15px 0 0;
+	padding: 15px;
+	width: 50%;
+}
+.vriordcancbox h3 {
+	font-size: 1.3em;
+	margin: 0 0 10px;
+	font-weight: bold;
+}
+.vriordcancbox .vriinput {
+    height: auto;
+    margin: 0 0 5px 0;
+}
+.vriordcancbox a {
+	text-decoration: none;
+}
+.vriordcancformbox {
+	display: none;
+	margin: 15px 0 0;
+}
+.vriordcancformbox table td {
+	padding: 5px;
+}
+
+/*** VikRentItems 1.1 ***/
+.vriemptycartdivcontainer {
+	float: left;
+	display:inline-block;
+	position:relative;
+}
+.vriemptycartdiv {
+	font-size: 14px;
+	margin: 2px;
+	font-weight: bold;
+	text-align:center;
+}
+.vriemptycartdiv a {
+	border-radius: 4px;
+	color:#ffffff !important;
+	padding: 8px 10px;
+	text-decoration:none;
+	display:inline-block;
+	background: none repeat scroll 0 0 #d9534f;
+	border: 1px solid #d43f3a;
+	transition: all 400ms ease-in-out 0s;
+}
+.vriemptycartdiv a:hover, .vriemptycartdiv a:focus, .vriemptycartdiv a:active {
+	background: none repeat scroll 0 0 #c9302c;
+	border-color: #ac2925;
+	transition: all 400ms ease-in-out 0s;
+	text-decoration: none;
+}
+.vriemptycartconfirmbox {
+	display: none;
+	background: none repeat scroll 0 0 #222222;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 20px 10px;
+    position: absolute;
+    left: 1px;
+    width: 410px;
+    z-index: 1000;
+    transition: all 400ms ease-in-out 0s;
+    box-shadow: 0 0 10px rgba(0,0,0, .1);
+}
+.vriemptycartconfirmbox > span {
+	display: block;
+	font-weight: bold;
+}
+.vriemptycartconfirmbox a, .vriemptycartconfirmbox a:link {
+	margin: 0 3px 0 0;
+	padding: 0px 10px;
+	border-radius: 4px 4px 4px 4px;
+	font-weight:bold;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.vriemptycartconfirmbox .vri-summary-yes {
+	color:#ffffff !important;
+	background: none repeat scroll 0 0 #159049;
+	border: 1px solid #398439;
+}
+.vriemptycartconfirmbox .vri-summary-no {
+	color:#666 !important;
+	background: none repeat scroll 0 0 #eee;
+	border: 1px solid #ddd;
+}
+.vriemptycartconfirmbox .vri-summary-yes:hover, .vriemptycartconfirmbox .vri-summary-yes:focus, .vriemptycartconfirmbox .vri-summary-yes:active {
+	background: none repeat scroll 0 0 #328432;
+	border-color: #398439;
+	transition: all 400ms ease-in-out 0s;
+	text-decoration: none;
+}
+.vriemptycartconfirmbox .vri-summary-no:hover, .vriemptycartconfirmbox .vri-summary-no:focus, .vriemptycartconfirmbox .vri-summary-no:active {
+	background: none repeat scroll 0 0 #ddd;
+	border-color: #ccc;
+	transition: all 400ms ease-in-out 0s;
+	text-decoration: none;
+}
+
+.vriremoveitemdiv {
+	float: right;
+}
+.vriremoveitemdiv a, .vriremoveitemdiv a:link {
+	color: #990000;
+	border: 1.5px solid #990000;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 4px 5px 4px;
+    background: #fff;
+    transition: all 400ms ease-in-out 0s;
+}
+.vriremoveitemdiv a:hover {
+	background: #990000;
+	color: #fff;
+	transition: all 400ms ease-in-out 0s;
+}
+.vridiscsquantsdiv {
+	background: #fbfbfb none repeat scroll 0 0;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin: 0 0 10px;
+    max-width: 250px;
+    padding: 10px 25px 20px;
+}
+.vridiscsquantstable {
+	width: 100%;
+}
+.vridiscsquantstrfirst td {
+	border-bottom: 1px solid #ddd;
+    font-weight: 400;
+    color: #006600;
+    padding: 4px 0 8px;
+}
+.vridiscsquantstrentry td {
+	padding: 7px 0 0;
+}
+.vridiscsquantsdivsearchmain {
+	width:100%;
+	display:inline-block;
+}
+.vridiscsquantsdivsearch {
+	display: block;
+	padding:10px;
+	width:50%;
+	float:right;
+}
+.vridiscsquantstablesearch {
+	width: 100%;
+}
+.vridiscsquantstrfirstsearch td {
+	font-weight: bold;
+	text-align: center;
+}
+.vridiscsquantstrentrysearch td {
+	text-align: center;
+}
+.vrichangedatesdivcontainer {
+	float: left;
+	display:inline-block;
+	position:relative;
+}
+.vrioconfirmbuttonsdiv {
+	width:100%;
+	margin:0 0 15px 0;
+	display:inline-block;
+}
+.vrioconfirmbuttonsdiv > div {
+	margin: 5px;
+}
+.vrichangedatesdiv {	
+	font-size: 14px;
+	margin: 2px;
+	color:#fff;
+	font-weight: bold;
+	text-align:center;
+	float:right;
+}
+.vrichangedatesdiv a {
+	background-color: #337ab7;
+	border: 1px solid #2e6da4;
+	border-radius: 4px;
+	color:#fff !important;
+	text-decoration:none;
+	display:inline-block;
+	padding:8px 10px 8px;
+	transition: all 400ms ease-in-out 0s;
+}
+.vrichangedatesdiv a:hover {
+	background: #286090;
+	border-color: #204d74;
+	text-decoration:none;
+	transition: all 400ms ease-in-out 0s;
+}
+.vricompleteorderdiv {
+	font-size: 14px;
+	line-height: 2em;
+	margin: 2px;
+	color:#fff;
+	font-weight: bold;
+	text-align:center;
+	display:inline-block;
+	float:right;
+}
+.vrichangedatesconfirmbox {
+	display: none;
+	background: none repeat scroll 0 0 #222222;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	padding: 20px 10px;
+	position: absolute;
+	left: 1px;
+	top: 46px;
+	width: 410px;
+	z-index: 1000;
+	transition: all 400ms ease-in-out 0s;
+	box-shadow: 0 0 10px #0000001a;
+}
+.vrichangedatesconfirmbox > span {
+	display: block;
+	font-weight: bold;
+}
+.vrichangedatesconfirmbox a {
+	margin: 0 3px 0 0;
+    padding: 0px 10px;
+    border-radius: 4px 4px 4px 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+.vrichangedatesconfirmbox .vri-summary-yes {
+	color: #fff !important;
+	background: none repeat scroll 0 0 #159049;
+	border: 1px solid #398439;
+}
+.vrichangedatesconfirmbox .vri-summary-no {
+	color: #666 !important;
+	background: none repeat scroll 0 0 #eee;
+	border: 1px solid #ddd;
+}
+.vrirelateditems {
+	padding: 5px;
+	width: 1200px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+}
+.vriyoumightintp {
+	text-transform:uppercase;
+	font-size:16px;
+	margin:15px 0 5px 0;
+	font-weight:bold;
+}
+.vrirelateditemsdivscroll {
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+.vrirelitemimgdiv {
+	display:inline-block;
+	margin:0 0 10px 0;
+	height: 117px;
+}
+.vrirelitemimgdiv img {	
+	max-width:150px;
+}
+.vrirelitemname {
+	font-size:15px;
+	font-weight:bold;
+	display:inline-block;
+	width:100%;
+}
+.vrirelitemdiv {
+	padding: 10px;
+	float: left;
+	border: 1px solid #DDDDDD;
+	text-align:center;
+	width: 33%;
+	margin:0 5px 0 0;
+	list-style-type: none;
+	min-height: 250px;
+}
+.vrirelitemsubmit {
+	margin-top: 15px;
+	margin-bottom: 0;
+	padding: 9px 30px;
+}
+.vridiscsquantsdivsearchrel {
+	text-align:center;
+}
+.vriselectquantitydivrel {
+	margin:5px 0 10px 0;
+}
+.vriselectquantitydivrel label {
+	display: inline-block;
+	font-weight: bold;
+}
+.vriselectquantitydivrel .vrismallinput {
+	width: 80px !important;
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+.vridiscsquantsdivsearchrel {
+	margin-top: 10px;
+}
+.vridiscsquantsdivsearchrel table {
+	margin:0 auto;
+}
+.vridiscsquantsdivsearchrel .vridiscsquantstrfirstsearchrel {
+	color:#003300;
+}
+.vrilistitemcarats table td, .vrilistitemcarats table tr {
+	border:0;
+}
+.vrilistitemcarats table td {
+	padding:0 5px;
+}
+.vricontinuerentdiv {
+	padding: 20px;
+	margin: 0 0 30px 0;
+	background: #606060;
+	border: 1px solid #a2d1ad;
+	box-sizing: border-box;
+}
+.vricontinuerentdiv > h4 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+}
+.vricontinuecategory {
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+.vricontinuerentdiv label {
+	display: block;
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+.vricontinuerentdiv select {
+	background: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin: 0;
+    padding: 6px !important;
+}
+.vricontinuerentdiv .booknow {
+	display: inline-block;
+	margin: 8px 0 0 5px;
+	width: auto;
+	padding: 7px 15px;
+	font-size: .9em;
+}
+.vricontinuerentdiv .vricontinue {
+	float:right;
+}
+.vrirelitemimg {
+	clear:both;
+	float:none;
+}
+.vriitcaratsdiv span {
+	display: inline-block;
+	padding: 8px;
+	border-right: 1px solid #ddd;
+}
+.vri-itemdet-carats, .vri-showprc-carats {
+	border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    margin: 23px 0 4px;
+    padding: 2px 0;
+}
+.vri-itemdet-carats .vriitcaratsdiv span {
+	border:0;
+	padding: 5px;
+}
+.vriitcaratsdiv span:last-child {
+	border:0;
+}
+.vrispecificationopt {
+	background: #606060;
+	border-top: 1px solid #ddd;
+	padding: 10px;
+	margin-top: 8px;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.vrispecificationoptselect {
+	float: right;
+}
+.vrispecificationopt p {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+.vrispecificationoptname {
+	display: inline-block;
+	min-width: 25%;
+}
+.vrideliveryservicespan {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 2px solid #CCCCCC;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 14px;
+	padding: 7px 21px 7px 18px;
+	margin: 5px 0 8px 0px;
+	position: relative;
+}
+.vrideliveryservicespan:after {
+	background: url("resources/images/deliveryok.png") no-repeat scroll left center transparent;
+	content: "";
+	height: 49px;
+	left: -11px;
+	top: -23px;
+	position: absolute;
+	width: 49px;
+}
+.item_delivery {
+	border: 1px solid #ddd;
+    font-size: 13px;
+    margin: 15px 0;
+    padding: 15px;
+}
+.vrideliverycont {
+	display: none;
+}
+.vrideliverycont label {
+	font-weight: bold;
+}
+.vrichangedeliveryaddress, .vrichangedeliveryaddress:link {
+	cursor: pointer;
+	display: inline-block;
+	padding: 3px 10px;
+	text-decoration: none;
+	background-color: #337ab7;
+    border: 1px solid #2e6da4;
+	border-radius: 4px;
+	color: #ffffff;
+	margin-left: 10px;
+}
+.vrichangedeliveryaddress:hover {
+	background-color: #286090;
+    border-color: #204d74;
+}
+#vrideliverymapesit {
+	border-top: 1px solid #666;
+	margin-top: 10px;
+	font-weight: bold;
+}
+#vrideliverymapesit.vrimaperr {
+	color: #fe6464;
+}
+#vripanel {
+	font-size: 14px;
+	font-family: "Century Gothic", Tahoma, Arial;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	z-index: 5;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 15px;
+	color: #eee;
+	max-width: 60%;
+}
+.vrimapnotes {
+	margin: 10px 0 0 0;
+}
+#vrideliverymapesit p {
+	margin: 5px 0 0;
+	padding: 0;
+}
+#vrideliverymapcontinue {
+	display: none;
+	float: right;
+	clear: both;
+}
+#vrideliverymaploading {
+	display: none;
+	float: right;
+	margin-right: 10px;
+}
+.vripricestroke {
+	text-decoration: line-through;
+}
+.vrivordcostsdelivery {
+	color: #125a7d;
+	font-weight: bold;
+}
+.vrivordcoststot {
+	border-top:1px solid #ddd;
+	padding-top:5px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.vrimapitemtitle {
+	border-bottom: 1px solid #888;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 12px;
+    padding: 5px 10px 5px 0;
+    color: #eee;
+}
+.vricalform .vridtsp {
+	font-size: 16px;
+	color: #006600;
+}
+.vrideliveryinsaddr label {
+	display: block;
+	color: #fff;
+	font-weight: bold;
+    margin: 0 0 5px;
+}
+#deliveryTo {
+	background-color: rgba(255,255,255,0.9);
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.42857;
+    margin: 0;
+    padding: 6px 12px;
+    position: relative;
+    width: auto !important;
+    z-index: 2;
+}
+.vridivsearch {
+	background: none repeat scroll 0 0 #FBFBFB;
+	border: 1px solid #EEEEEE;
+	border-radius: 4px;
+	padding: 25px;
+	width: 100%;
+}
+.vricalform {
+	display: inline-block;
+	width: 100%;
+}
+.vrisfentry {
+	display: inline-block;
+	margin: 0 0 10px;
+	width: 100%;
+}
+.vrisfentrytimeslot {
+	display: block;
+	float: none;
+	width: 100%;
+}
+.vridivsearch .vrisfentry label {
+	display: block;
+	margin: 7px 5px 5px 0;
+}
+.vridivsearch .vrisfentry .vrisfentrytime label {
+	display: inline-block;
+	float: left;
+	margin: 5px 5px 0 0;
+}
+.vridivsearch .vrisfentry div {
+	display: inline-block;
+}
+.vridivsearch .vrisfentry > span {
+	border-collapse: separate;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+.vridivsearch .vrisfentry input {
+	background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    float: left;
+    font-size: 14px;
+    height: 18px;
+    line-height: 1.42857;
+    margin: 0;
+    padding: 6px 12px;
+    position: relative;
+    width: auto !important;
+    z-index: 2;
+    box-sizing: initial;
+}
+.vri-cal-img {
+    border-color: #ccc;
+    border-image: none;
+    border-radius: 0 4px 4px 0;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px 0;
+    color: #555;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    height: 18px;
+    line-height: 18px;
+    padding: 8px 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.vridivsearch .vrisfentry input.vri-numbinput {
+	width: 50px !important;
+	border-radius: 4px;
+}
+.vridivsearch .vridetbooksubmit {
+	width: auto;
+}
+.vrisfentry .vriplacesp {
+	min-width: 28%;
+}
+#vricomselph, #vricomseldh {
+	width: 82px;
+	display: inline-block;
+	float: left;
+}
+#vricomselpm, #vricomseldm {
+	width: 60px;
+	display: inline-block;
+	float: left;
+}
+.vripickdroplab {
+	min-width: 140px;
+}
+.vrisfentrytime {
+	float: left;
+	max-width: 45%;
+	margin: 0 0 0 10px;
+}
+.vridivsearch .vrisfentry label.vritimedots {
+	margin-left: 5px;
+}
+.vrisfentry .vriplacesp select, #vricomselph select, #vricomselpm select,
+#vricomseldh select, #vricomseldm select {
+	background: #fff;
+	font-size: 12px !important;
+	height: 30px;
+	padding: 2px 5px 0;
+	margin-bottom: 0;
+	border: 1px solid #ccc;
+}
+.hasDatepicker {
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px;
+	float: left;
+	height: 24px;
+	margin: 0 5px 0 0;
+	padding: 3px 6px;
+	width: auto !important;
+}
+.vridivsearch .ui-datepicker-trigger {
+	float: left;
+}
+.vrisfentrysubmit input {
+	background: none repeat scroll 0 0 #DDDDDD;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	padding:10px 35px;
+}
+.vrisfentrytimeslot > span {
+	display: inline-block;
+	float: left;
+}
+.vrisfentrytimeslot > span select {
+	background: #fff;
+	border: 0 none;
+	border-radius: 4px;
+	font-size: 12px !important;
+	line-height: 1;
+	padding:6px 5px;
+	border: 1px solid #ccc;
+	height: auto;
+}
+.vridtsp {
+	margin: 7px 0 0 0;
+}
+.vriforcetime {
+	cursor: not-allowed;
+	display: inline-block;
+	margin-left: 3px;
+	padding: 5px;
+}
+.vrismallinput {
+	background: #FFFFFF;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px;
+	height: 24px;
+	margin: 0 5px 0 0;
+	padding: 3px 6px;
+	width: auto !important;
+}
+.vri-avcals-container {
+	display: inline-block;
+	width: 100%;
+}
+/*** VRI 1.4 ***/
+.vrilistcontainer, .vri-search-results-container {
+	display: inline-block;
+	width: 100%;
+}
+.vri-list-item-block, .vri-search-result-block > form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	border:1px solid #ddd;
+	margin: 10px 0;
+} 
+.vri-list-item-inner, .vri-result-item-inner {
+	border-right: 1px solid #ddd;
+    display: inline-block;
+    float: left;
+    min-height: 162px;
+    position: relative;
+    flex: 1;
+}
+.vri-list-item-cont, .vri-result-item-cont {
+	flex-basis: 30%;
+	align-self: center;
+}
+.vri-list-item-cont, .vri-result-item-cont,{
+	float: right;
+    left: -2px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 20%;
+}
+.vri-result-item-img {
+	display: inline-block;
+    float: left;
+    margin: 0 10px 0 0;
+    width: 25%;
+}
+.vri-result-item-img img, .vri-list-item-img img {
+	padding: 5px;
+	max-width: 100%;
+}
+.vri-result-item-descr {
+	overflow: hidden;
+    padding: 15px;
+}
+.vri-result-itembottom {
+	display: inline-block;
+	width: 100%;
+}
+.vri-search-selectquantity .vri-numbinput {
+	max-width: 65px!important;
+	display: inline-block;
+	padding-left: 5px;
+}
+.vri-search-selectquantity span {
+	display: block;
+	margin: 10px 5px 0 0;
+	font-size: 12px;
+	font-weight: bold;
+}
+.vri-search-subdiv {
+	margin: 10px 0 0;
+}
+.vrilistitemcarats, .vri-result-itembottom {
+	display: inline-block;
+	flex: 100%;
+	border-top:1px solid #ddd;
+}
+.vri-result-itemcarats {
+	float: left;
+	display: inline-block;
+}
+.vri-result-itemdiscquants-container {
+	float: right;
+	display: inline-block;
+	border-left:1px solid #ddd;
+	width: 30%;
+}
+.vri-result-itembottom-double {
+	border-top:1px solid #328432;
+}
+.vri-result-itembottom-double .vri-result-itemcarats {
+	width: 79%;
+}
+.vri-result-itemdiscquants-inner {
+	display: inline-block;
+	width: 100%;
+	padding: 8px 0;
+}
+.vri-result-itemdiscquants-inner > div {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+.vri-result-itemdiscquants-firstrow > div, 
+.vri-result-itemdiscquants-listrows .vri-result-itemdiscquants-row > div {
+	float: left;
+	display: inline-block;
+	width: 50%;
+}
+.vri-result-itemdiscquants-row {
+	display: inline-block;
+	width: 100%;
+}
+.vri-result-itemdiscquants-firstrow-right, .vri-result-itemdiscquants-firstrow-left{
+    font-size: 14px;
+    font-weight: bold;
+}
+.vri-result-itembottom-double .vriitcaratsdiv span {
+	border:0;
+}
+.vri-showprc-groupblocks {
+	margin: 0 0 25px 0;
+}
+.vri-header-attract {
+	border-bottom:1px solid #ddd;
+	padding:0 0 10px;
+}
+.vri-showprc-carats {
+	margin: 30px 0 0;
+}
+.vri-itemdet-groupblocks, 
+.vri-showprc-groupblocks {
+	display: flex;
+	width: 100%;
+	padding: 15px;
+	border:1px solid #ddd;
+	box-sizing: border-box;
+}
+.vri-showprc-groupblocks {
+	flex-wrap: wrap;
+}
+.vri-showprc-mainimage > img {
+    max-width: 100%;
+}
+.vri-showprc-groupblocks > div {
+	flex: 1;
+}
+.vri-itemdet-groupleft {
+	float: left;
+	display: inline-block;
+	width: 45%;
+	padding: 0 15px 0 0;
+}
+.vri-showprc-groupleft {
+	float: left;
+	display: inline-block;
+	width: 45%;
+	padding: 0 15px 0 0;
+}
+.vri-showprc-groupblocks .vri-medium-header {
+	flex: 100%;
+}
+.vri-itemdet-groupright {
+	float: left;
+	display: inline-block;
+	width: 53%;
+	padding: 0 0 0 35px;
+}
+.vri-showprc-groupright {
+	float: left;
+	display: inline-block;
+	width: 53%;
+	padding: 0 0 0 35px;
+}
+.vri-showprc-groupright .vri-showprc-descr {
+	padding: 15px 10px;
+}
+.vri-itemdet-mainimage img {
+	max-width: 100%;
+}
+.vri-itemdet-extraimages {
+	margin: 8px 0 0;
+}
+.vri-itemdet-infocat {
+	font-weight: 400;
+	color: #999;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.vri-itemdet-infoname span {
+	font-size: 32px;
+	color: #555;
+}
+.vri-itemdet-descr {
+	margin: 10px 0 0;
+}
+.vri-itemdet-priceblock {
+	background: #fbfbfb none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    text-align: right;
+    margin: 18px 0 0;
+    padding: 10px;
+}
+.vri-itemdet-priceblock .vri-itemdet-price-startfrom {
+	color: #999;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0 7px 0 0;
+}
+.vri-itemdet-priceblock .vri-itemdet-price-cost {
+	color: #006600;
+	font-size: 24px;
+	font-weight: 400;
+}
+.vri-itemdet-priceblock .vri-itemdet-price-fromtext {
+	color: #999;
+    font-size: 24px;
+}
+.vri-itemdet-monthslegend {
+	margin: 25px 0 0;
+}
+.vrivordcosts > div {
+	display: inline-block;
+	margin: 5px;
+	background: #606060;
+	border:1px solid #ddd;
+	padding-bottom: 10px;
+}
+.vri-ord-item-entry-main {
+	margin: 8px 8px 8px 10px;
+}
+.vri-ord-item-entry-tariff {
+	padding: 0 15px;
+	font-size: 1.2em;
+	font-weight: bold;
+	display: flex;
+	flex-wrap: wrap;
+}
+.vri-ord-item-entry-tariff span:last-child {
+	margin-left: auto;
+	display: inline-block;
+}
+.vri-ord-item-entry-name {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+.vri-ord-mid-container {
+	display: flex;
+}
+.vri-ord-mid-container > div {
+	flex: 1;
+	border:1px solid #ddd;
+	margin: 5px;
+	background: #606060;
+}
+.vri-ord-mid-container > .vri-ord-udata {
+	padding: 15px;
+}
+.vri-ord-mid-container > .vri-ord-pickdrop-block > div {
+	padding: 5px 15px;
+}
+.vri-ord-mid-container > .vri-ord-pickdrop-block > div {
+	border-bottom: 1px solid #ddd;
+}
+.vri-ord-pickuploc-lbl, .vri-ord-dropoffloc-lbl {
+	display: block;
+	font-weight: bold;
+}
+.vri-ord-mid-container > .vri-ord-pickdrop-block > div:last-child {
+	border: 0 !important;
+}
+.vri-ord-downpdf {
+	margin: 5px 0;
+}
+.vri-ord-downpdf a, .vri-ord-downpdf a:link {
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 4px;
+	background: #337ab7;
+	border: 1px solid #2e6da4;
+	color: #fff;
+	text-decoration: none;
+}
+.vri-ord-downpdf a > i {
+	margin-right: 5px;
+}
+.vri-ord-downpdf a:hover {
+	background-color: #286090;
+	border-color: #204d74;
+}
+.vri-ord-reqcanc-container > div > label {
+	display: inline-block;
+	font-weight: bold;
+	width: 100%;
+	margin: 0;
+}
+.vri-ord-reqcanc-container .vritextarea {
+	float: none;
+	width: 100%;
+	max-width: 100%;
+}
+.vri-ord-reqcanc-entry-sbmt {
+	margin-top: 10px;
+}
+.vri-ord-reqcanc-entry-sbmt input {
+	border-radius: 4px;
+	padding: 8px 10px;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+	cursor: pointer;
+}
+.vri-ord-reqcanc-entry-sbmt input:hover {
+	background-color: #449d44;
+	border-color: #398439;
+}
+.vri-ord-mid-container > div .vri-medium-header {
+	color: #ffffff;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.vri-ord-mid-container > .vri-ord-udata .vri-medium-header {
+	padding: 0 0 5px 0;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.vri-ord-mid-container > .vri-ord-pickdrop-block .vri-medium-header {
+	padding: 15px 15px 0;
+}
+.vrivordcosts {
+	display: flex;
+	flex-wrap: wrap;
+}
+.vrivordcosts .vri-ord-item-block {
+	flex-basis: 31%;
+}
+.vrivordcosts > .vri-ord-coststot-container {
+	flex: 100%;
+	margin: 5px 0;
+	box-sizing: border-box;
+}
+.vri-ord-coststot-container .vri-ord-totpaid {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px solid #ddd;
+}
+.vri-ord-coststot-container .vri-ord-totremaining {
+	color: #d02828;
+}
+.vri-ord-coststot-container .vri-ord-coststot, .vri-ord-coststot-container .vrivordcoststot {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	box-sizing: border-box;
+}
+.vri-ord-coststot-container > div {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 15px;
+}
+.vri-ord-coststot-container > div .vri-ord-tot-cost {
+	margin-left: auto;
+}
+.vri-bookingdet-userdetail-lbl {
+	font-weight: bold;
+	display: inline-block;
+	min-width: 130px;
+}
+.vri-ord-det-lbl, .vri-ord-pickupdt-lbl, .vri-ord-dropoffdt-lbl {
+	display: block;
+	font-weight: bold;
+}
+.vri-ord-item-entry-options {
+	margin: 10px 0 0;
+	border-top: 1px solid #ddd;
+	padding: 10px 15px 0;
+}
+.vri-ord-item-entry-delivery .vrivordcoststitle {
+	display: block;
+}
+.vri-ord-item-entry-options .vrivordcoststitle {
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.vrilistgoonlist {
+	display: inline-block;
+}
+.vri-showprc-extraimages {
+	margin: 10px 0 0;
+}
+.vri-ord-item-entry-img {
+	text-align: center;
+}
+.table-responsive {
+    min-height: 0.01%;
+    overflow-x: auto;
+}
+.table {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid #dddddd;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+
+/* VRI 1.5 - Characteristics - Start */
+.vriulcarats {
+	margin: 0;
+	padding: 0;
+}
+.vriulcarats li {
+	padding: 0;
+	margin: 0;
+	vertical-align:middle;
+	display: inline-block;
+	line-height: .9em;
+	list-style-type: none !important;
+}
+.vriulcarats li span {
+	margin: 5px 3px;
+}
+.vriulcarats li:first-child span {
+	margin-left: 8px;
+}
+.vriulcarats .vri-expl {
+	display: inline-block;
+}
+.vri-itemdet-kitrelations, .vri-showprc-kitrelations {
+	margin-top: 15px;
+}
+.vri-itemdet-kitrelations .vri-kit-expl, .vri-showprc-kitrelations .vri-kit-expl {
+	font-weight: bold;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.vri-kitrelations-tbl {
+	background: #f6f6f6;
+}
+.vri-kitrelations-tbl tr {
+	border-top: 1px solid #eee;
+}
+.vri-kitrelations-tbl tr:nth-child(odd) {
+	background: #eee;
+}
+.vri-kitrelations-tbl tr td {
+	padding: 5px 10px;
+}
+.vri-kitrelations-tbl tr td:first-child {
+	min-width: 150px;
+}
+.vri-kitrelations-tbl tr td:last-child {
+	font-size: .9em;
+	font-weight: bold;
+	text-align: right;
+}
+/* Tooltip Charateristics */
+[data-vri-expl] {
+	position: relative;
+	cursor: pointer;
+}
+[data-vri-expl]:before,
+[data-vri-expl]:after {
+	position: absolute;
+	visibility: hidden;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	-webkit-transition:
+		opacity 0.2s ease-in-out,
+		visibility 0.2s ease-in-out,
+		-webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	-moz-transition:
+		opacity 0.2s ease-in-out,
+		visibility 0.2s ease-in-out,
+		-moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	transition:
+		opacity 0.2s ease-in-out,
+		visibility 0.2s ease-in-out,
+		transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	pointer-events: none;
+}
+/* Show the entire tooltip on hover and focus */
+[data-vri-expl]:hover:before,
+[data-vri-expl]:hover:after,
+[data-vri-expl]:focus:before,
+[data-vri-expl]:focus:after {
+	visibility: visible;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+}
+/* Base styles for the tooltip's directional arrow */
+[data-vri-expl]:before {
+	z-index: 10001;
+	border: 6px solid transparent;
+	background: transparent;
+	content: "";
+}
+[data-vri-expl]::after {
+	margin-left: -70px;
+}
+/* Base styles for the tooltip's content area */
+[data-vri-expl]:after {
+	text-align: center;
+	z-index: 10000;
+	padding: 8px;
+	width: 160px;
+	background-color: #000;
+	background-color: hsla(0, 0%, 20%, 0.9);
+	color: #fff;
+	content: attr(data-vri-expl);
+	font-size: 12px;
+	line-height: 1.2;
+}
+/* Bottom */
+.vri-expl:before,
+.vri-expl:after {
+	top: 100%;
+	bottom: auto;
+	left: 34%;
+}
+[data-vri-expl]::before {
+	margin-top: -12px;
+	margin-bottom: 0;
+	border-top-color: transparent;
+	border-bottom-color: #000;
+	border-bottom-color: hsla(0, 0%, 20%, 0.9);
+}
+.vri-expl:hover:before,
+.vri-expl:hover:after,
+.vri-expl:focus:before,
+.vri-expl:focus:after {
+	-webkit-transform: translateY(12px);
+	-moz-transform: translateY(12px);
+	transform: translateY(12px); 
+}
+/* Tooltip Charateristics - End */
+/* VRI 1.5 - Characteristics - End */
+.vri-main-search-form > form {
+	display: flex;
+}
+.vridivsearch .vri-search-sessvals .vridtsp {
+	font-size: inherit;
+	font-weight: bold;
+	margin-top: 0;
+}
+.vridivsearch .vri-search-sessvals {
+	border: 1px solid #ddd;
+	padding: 5px 15px;
+	box-sizing: border-box;
+	background: #fff;
+	display: inline-block;
+	width: 48%;
+	border-radius: 4px;
+	margin-right: 5px;
+}
+.vrisearchemptycartdiv .btn {
+	background: #eee;
+	color: #444;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+.vrisearchemptycartdiv .btn:hover {
+	background: #fff;
+}
+.vrisearchgosummarydiv {
+	margin: 15px 0;
+}
+.vrisearchgosummarydiv .btn {
+	background: #337ab7;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 4px;
+	border: 1px solid #2e6da4;
+}
+.vrisearchgosummarydiv .btn:hover {
+	color: #fff;
+	background-color: #286090;
+	border-color: #204d74;
+}
+.vri-main-search-form .vri-search-sessvals .vripickdroplab {
+	margin-bottom: 0;
+}
+.vri-main-search-form .vrilocationsbox {
+	order: 2;
+	flex-basis: 200px;
+}
+.vri-main-search-form .vricalform {
+	flex: 1;
+	width: auto;
+	padding-right: 15px;
+}
+.vri-main-search-form .vricalform .vrisfentrysubmit input {
+	width: auto;
+}
+.vri-main-search-form .vrilocationsmapdiv {
+	background: #eee;
+	text-transform: uppercase;
+	color: #444;
+	font-weight: bold;
+}
+.vri-main-search-form .vrilocationsmapdiv a {
+	padding: 15px 10px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+.vri-main-search-form .vrilocationsmapdiv span {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.vri-itinerary-summary {
+	border: 1px solid #ddd;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.vri-itinerary-summary > div {
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px;
+	flex: 1;
+}
+.vri-itinerary-summary .vri-itinerary-pickup {
+	border-right: 1px solid #ddd;
+}
+.vri-itinerary-summary > div > h4 {
+	margin-bottom: 5px;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .9em;
+}
+.vri-itinerary-summary i {
+	margin-right: 5px;
+	color: #666;
+}
+.vri-itinerary-summary .vri-itinerary-pickup-locdet, .vri-itinerary-summary .vri-itinerary-dropfff-locdet {
+	display: inline-block;
+	vertical-align: top;
+}
+.vri-itinerary-confirmation {
+	display: flex;
+	border: 2px solid #ddd;
+}
+.vri-itinerary-confirmation > div {
+	flex: 1;
+	padding: 20px;
+}
+.vri-itinerary-confirmation > div:first-child {
+	border-right: 1px solid #ddd;
+}
+.vri-itinerary-confirmation > div h4 {
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+}
+.vri-itinerary-confirmation > div > div > * {
+	display: inline-block;
+}
+.vri-itinerary-confirmation > div > div > i {
+	margin-right: 5px;
+}
+.vri-itinerary-duration {
+	font-weight: bold;
+	margin-left: 5px;
+	font-style: italic;
+	color: #666;
+}
+/* User Orders */
+.vri-searchorderinner span {
+	font-size: 1.3em;
+	display: block;
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+.vri-searchorder-enterpin span {
+	display: block;
+	margin-bottom: 2px;
+}
+.vri-searchorder-enterpin input {
+	display: inline-block;
+	width: auto !important;
+}
+.vri-searchorder-enterpin .vri-searchordersubmit {
+	cursor: pointer;
+}
+.vri-orderslisttable thead {
+	background: #eee;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .9em;
+}
+.vri-orderslisttable thead td:last-child {
+	text-align: center;
+}
+.vri-orderslisttable td {
+	vertical-align: middle !important;
+}
+.vri-order-status-cell i {
+	font-size: 14px;
+}
+.vri-order-status-cell-cancelled {
+	color: #d9534f;
+}
+.vri-order-status-cell-standby {
+	color: #f0ad4e;
+}
+.vri-order-status-cell-confirmed {
+	color: #5cb85c;
+}
+.vri-order-status-lbl {
+	text-align: center;
+}
+.vri-order-status-lbl > span {
+	display: inline-block;
+	padding: 4px 10px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+.vri-order-status-lbl-cancelled > span {
+	background: #d9534f;
+}
+.vri-order-status-lbl-standby > span {
+	background: #f0ad4e;
+}
+.vri-order-status-lbl-confirmed > span {
+	background: #5cb85c;
+}
+.vri-searchordersubmit {
+	padding: 4px 10px;
+	background: #337ab7;
+	border: 1px solid #2e6da4;
+	color: #fff;
+	font-weight: bold;
+}
+.vri-searchordersubmit:hover {
+	background: #286090;
+}
+.vri-ord-details-head {
+	font-weight: bold;
+	margin: 15px 0 20px;
+	padding: 20px !important;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 2px;
+}
+.vri-ord-details-head i {
+	margin-right: 5px;
+	font-size: 26px;
+}
+.vri-ord-details-head h4 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-weight: bold;
+}
+.vri-ord-details-head-confirmed {
+	background: #158c15;
+	color: #fff;
+}
+.vri-ord-details-head-cancelled {
+	background: #d90000;
+	color: #fff;
+}
+.vri-ord-details-head-pending {
+	background: #e69903;
+	color: #fff;
+}
+.vri-offline-cc-container {
+	text-align: left;
+}
+.vri-offline-cc-container label {
+	display: block;
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+#offlineccsubmit {
+	display: inline-block;
+	width: auto;
+	padding: 8px 15px;
+	background-color: #337ab7;
+	color: #fff;
+	border: 1px solid #2e6da4;
+}
+#offlineccsubmit:hover {
+	background-color: #286090;
+	border-color: #204d74;
+}
+
+
+/*** jQuery Calendar ***/
+.ui-datepicker table {
+  font-size: 0.75em !important;
+}
+.ui-widget-content {
+	border-color: #ddd !important;
+	margin-top: 5px;
+	border-radius: 2px !important;
+	box-shadow: 0 6px 10px rgba(0,0,0,.1);
+}
+.ui-datepicker td {
+  background: #eee;
+}
+.ui-datepicker .ui-datepicker-title {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+    font-size: 11px !important;
+    border:1px solid #eee !important;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  background: transparent !important;
+  font-weight: 500 !important;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+  color: #fff !important;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus {
+  background: #fff !important;
+  border:1px solid #3e6372 !important;
+  border-radius: 3px;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus {
+  color: #222222 !important;
+}
+.ui-widget-header {
+  background: transparent !important;
+  border: 0 !important;
+  font-size: 22px !important;
+  font-weight: 300 !important;
+  border-radius: 0 !important;  
+}
+.ui-datepicker-header.ui-widget-header {
+	border-bottom: 1px solid #ddd !important;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+  opacity: 0.2 !important;
+}
+.ui-datepicker-other-month {
+  background: transparent !important;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+  padding: 0.5em !important;
+  text-align: center !important;
+}
+.vev-ev-list-evtimecont {
+  background: #f6f6f6 !important;
+  color: #222222;
+}
+.ui-datepicker-current-day {
+    border-radius: 3px;
+    background: #3e6372 !important;
+}
+.ui-datepicker-current-day:hover .ui-state-active {
+  color:#3e6372 !important;
+}
+.ui-datepicker .ui-datepicker-current-day span.ui-state-active, .ui-datepicker .ui-datepicker-current-day a.ui-state-active {
+  border:1px solid #3e6372 !important;
+}
+.ui-datepicker-days-cell-over {
+  background: #eee !important;
+}
+.ui-datepicker-header .ui-corner-all.ui-state-hover {
+  border-color: #eee !important;
+  background: #ddd !important;
+}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    width: 1.6em !important;
+    height: 1.6em !important;
+}
+.ui-datepicker th {
+  font-size: 12px !important;
+  color: #3e6372 !important;
+  background: #fff;
+}
+.ui-datepicker table {
+	border: 0;
+}
+
+@media only screen and (max-width : 960px) {
+	.vri-main-search-form > form {
+		flex-wrap: wrap;
+	}
+	.vri-main-search-form .vrilocationsbox {
+		flex-basis: 100%;
+		margin-top: 20px;
+	}
+	.vri-main-search-form .vricalform {
+		padding-right: 0;
+	}
+}
+@media only screen and (max-width : 760px) {
+	.vrivordcosts > div {
+		width: 100%;
+	}
+	.vri-result-itemdiscquants-container {
+		border-left: 0;
+	}
+}
+@media only screen and (max-width : 680px) {
+	.vridivsearch .vrisfentry div {
+	    display: inline-block;
+		max-width: 100%;
+		width: 100%;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+	.vri-itinerary-summary > div, .vri-list-item-cont, .vri-result-item-cont {
+		flex: 100%;
+	}
+	.vri-itinerary-summary .vri-itinerary-pickup {
+		border: 0;
+		border-bottom: 1px solid #ddd;
+	}
+	.vri-list-item-inner, .vri-result-item-inner {
+		flex: 100%;
+		border: 0;
+		min-height: inherit;
+	}
+	.vri-result-costdivcont {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.vri-result-divcost {
+		margin-right: 20px;
+	}
+	.vri-search-subdiv {
+		margin-left: auto;
+	}
+	.vri-showprc-groupblocks > div {
+		flex: 100%;
+	}
+	.vri-showprc-mainimage {
+		text-align: center;
+	}
+	.vri-showprc-groupleft {
+		padding-right: 0;
+	}
+	.vri-showprc-groupright {
+		padding-left: 0;
+	}
+	.vri-itinerary-confirmation {
+		flex-wrap: wrap;
+	}
+	.vri-itinerary-confirmation > div {
+		flex: 100%;
+	}
+	.vri-itinerary-confirmation > div:first-child {
+		border: 0;
+		border-bottom: 1px solid #ddd;
+	}
+	.vritableorder tr td:first-child {
+		min-width: 150px;
+	}
+	.vricompleteorderdiv {
+		text-align: right;
+		width: 100%;
+	}
+	.vri-oconfirm-middlep > div {
+		flex: 100%;
+	}
+	.vri-ord-mid-container {
+		flex-wrap: wrap;
+	}
+	.vri-ord-mid-container > div {
+		flex: 100%;
+	}
+	.vrivordcosts .vri-ord-item-block {
+		flex: 47%;
+	}
+	.vri-ord-item-block {
+		padding-bottom: 10px;
+	}
+	.vridivsearch .vri-search-sessvals {
+		width: 100%;
+	}
+}
+@media only screen and (max-width : 550px) {
+	.vri-list-item-inner, .vri-list-item-cont, 
+	.vri-itemdet-groupleft, .vri-itemdet-groupright, .vricaldivcont, .vrisfentrytime,
+	.vri-result-item-inner, .vri-result-item-cont, .vri-result-itembottom-double .vri-result-itemcarats, 
+	.vri-result-itembottom-double .vri-result-itemdiscquants-container, .vri-showprc-groupleft, .vri-showprc-groupright, 
+	.vri-ord-pickdrop-block > div {
+		width: 100%;
+	}
+	.vrisfentrytime {
+		max-width: 100%;
+		margin:10px 0 0 0;
+	}
+	.vri-showprc-mainimage img {
+		max-width: 100%;
+	}
+	.vri-list-item-img, .vri-list-item-descr, .vri-result-item-img, .vri-result-item-descr {
+		width: 100%;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	.vri-list-item-img .img.vrilistimg {
+		margin: 0;
+	}
+	.vri-itemdet-groupright, .vri-showprc-groupright {
+		padding: 15px 0 0;
+	}
+	.vri-list-item-inner, .vri-result-item-inner, .vri-itemdet-groupright, 
+	.vri-showprc-groupright, .vri-ord-pickdrop-block > .vri-ord-pickleft-block {
+		border:0;
+	}
+	.vrilistcostdivcont, .vri-search-subdiv {
+		padding: 0 0 10px 0;
+	}
+	.vricompleteorderdiv {
+		float: none;
+		display: block;
+	}
+	.vrivordcosts > div {
+		width: 98%;
+	}
+	.vri-ord-item-block {
+		padding: 10px;
+	}
+	.vri-ord-item-entry-tariff {
+		margin: 5px 0 0;
+	}
+	.vri-ord-item-entry-main {
+		float: none;
+		margin: 0 0 8px;
+	}
+	.vri-result-item-cont {
+		border-top: 1px solid #ddd;
+	}
+	.vri-result-item-img {
+		margin-right: 0;
+	}
+	.vri-result-costdivcont > div {
+		flex: 100%;
+		text-align: center;
+	}
+	.vrilistdivcost .vriliststartfrom, .vriliststartfromtext, .vristartfrom, .vri-result-divcost .vriliststartfrom {
+		text-align: center;
+	}
+	.vrivordcosts .vri-ord-item-block {
+		flex: 100%;
+	}
+	.vriinput {
+		width: 100%;
+	}
+	.vritextarea {
+		min-width: 100%;
+	}
+}

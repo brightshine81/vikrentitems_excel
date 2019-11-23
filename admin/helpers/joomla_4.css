@@ -1,0 +1,430 @@
+/* CSS adapter file for Joomla 4.x */
+
+/*
+* Font is bigger in J4, so this class of cells
+* should be a bit wider.
+*/
+table.admintable td.vri-config-param-cell {
+	width: 240px;
+}
+/*
+* Tables no longer support centered classes
+*/
+.center, .table td.center, .table th.center {
+	text-align: center;
+}
+/*
+* This simulates the class .custom-select of BS4
+*/
+form select {
+	display: inline-block;
+	max-width: 100%;
+	height: calc(2.25rem + 2px);
+	padding: .375rem 1.75rem .375rem .75rem;
+	line-height: 1.5;
+	color: #495057;
+	vertical-align: middle;
+	background: #fefefe url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+	background-size: auto auto;
+	background-size: 8px 10px;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	min-width: unset;
+	max-width: 250px;
+}
+form select[multiple] {
+	height: auto;
+	background-image: none;
+	padding: 5px;
+}
+/*
+* Textarea fields do not have any styling
+*/
+textarea {
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+/*
+* This is for the tabs of the Configuration page,
+* and for most Manage views.
+*/
+div.current {
+	background: #fff;
+}
+table.admintable {
+	background: #fff;
+}
+/*
+* To not start the overflow in the modal dialogs of VRC
+*/
+.vri-smstpl-bgroup {
+	display: inline-block !important;
+}
+/*
+* Classes .label and .badge
+*/
+.label {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.label, .badge {
+	display: inline-block;
+	padding: 2px 4px;
+	font-size: 10.998px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #fff;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #999;
+}
+.label-success, .badge-success {
+	background-color: #3c763d;
+}
+.label-warning, .badge-warning {
+	background-color: #f89406;
+}
+/*
+* Input fields have a z-index greater than 0, so the sub-menu
+* of Vik Booking must have an even greater z-index property.
+*/
+.vri-menu-right ul {
+	z-index: 99;
+}
+/*
+* The rules below are needed to beautify the layout
+* with the default template of J4 and BS4 rules.
+*/
+.vri-ratesoverview-itemsel-entry {
+	background: #fff;
+}
+
+/* General adapter **/
+.input-append, .input-prepend {
+    display: inline-block;
+    margin-bottom: 9px;
+    vertical-align: middle;
+    font-size: 0;
+    white-space: nowrap;
+}
+/* Input style adapter **/
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], 
+input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], 
+input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	max-width: 240px;
+	background-color: #fefefe;
+	font-size: 1rem;
+	padding: 5px 6px;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-image: none;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+textarea {
+	padding: 10px;
+}
+/* Dashboard - Heading adapter to J3 */
+.vri-dashboard-today-checkin-wrapper h4, .vri-dashboard-today-checkout-wrapper h4 {
+    margin: 12px 0 !important;
+}
+/* Dashboard - input e select inside heading or field group **/
+.btn-toolbar .btn-wrapper {
+	display: inline-block;
+	margin: 0 0 8px 5px;
+}
+/* Component Menu style **/
+.vri-menu-parent-li > span {
+	font-weight: normal;
+}
+/* Dashboard - aligning the search fields **/
+.btn-wrapper > * {
+	float: left;
+}
+.vri-dashboard-today-bookings .btn-toolbar {
+	margin-bottom: 0;
+}
+.vri-dashboard-today-bookings .btn-wrapper .form-control {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	line-height: 1.6em;
+}
+.vri-dashboard-today-bookings .btn-wrapper .btn {
+	background: #e7e7e7;
+	border: 1px solid #ced4da;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.vri-dashboard-today-checkin-wrapper h4 #arrivals-tot, .vri-dashboard-today-checkout-wrapper h4 #departures-tot {
+	margin-top: -3px;
+}
+.vri-dashboard-today-itemocc-det > h5 span {
+	font-size: 11px;
+	width: 22px;
+	height: 22px;
+	line-height: 15px;
+	font-weight: normal;
+}
+.vri-itemdet-guests-toggleword {
+	border-bottom: 0 !important;
+}
+.vri-checkin-notes-cont textarea {
+	padding: 10px;
+}
+/* Dashboard - svg problems **/
+.vri-dashboard-chart-container .donutChart {
+	padding: 0;
+}
+/* Global Configuration - Tabs style fix **/
+dt.tabs span h3 {
+	padding-top: 5px;
+}
+.admintable .btn i[class^="icon-"]{
+	margin-right: 5px;
+}
+/* Global Configuration - parameters detail fix **/
+.vri-resmodcanc-lim {
+	margin-left: 10px;
+}
+.vri-resmodcanc-lim label {
+	display: inline-block;
+}
+.vri-resmodcanc-lim input {
+	display: inline-block;
+}
+/* Tax Rate - fixing style problems **/
+.add-tax-breakdown-name, .add-tax-breakdown-rate {
+	padding-bottom: 9px;
+}
+/* Options/Extras - tooltip info message **/
+.vri-outer-info-message {
+	z-index: 1;
+}
+/* item details - fixing style problems **/
+#vri-distfeatures-toggle i {
+	margin-right: .25em;
+}
+.vrplusminuscont {
+	margin-bottom: 10px;
+}
+.captionremoveimg .icon-remove {
+	font-size: 14px;
+}
+tr.vritemparamp td span.js-switcher {
+	padding-left: 0;
+}
+tr.vritemparamp td .switcher-label-1, tr.vritemparamp td .switcher-label-0 {
+	display: inherit;
+	margin-top: 10px;
+}
+tr.vritemparamp td span {
+	vertical-align: top;
+}
+.vri-runit-feature {
+	border-bottom: 0;
+}
+/* Special Pricing - fixing filter style **/
+.vri-ratesoverview-itemsel-entry {
+	padding-bottom: 10px;
+}
+/* Rates Overview - fixing filter style **/
+#vri-ratesoverview-calculate, .vri-ratesoverview-itemsel-entry .btn[type="button"] {
+	border: 1px solid #ced4da;
+}
+/* Rates Overview - Calendar Pricing Overview **/
+.vri-roverview-datecmd-top .vri-roverview-datecmd-date {
+	width: 120px;
+}
+.vri-roverviewrowone form[name^="vrcratesoverview"] a, .vri-roverviewrowone form[name^="vrcratesoverview"] a:link, 
+.vri-roverviewrowone form[name^="vrcratesoverview"] a:active, .vri-roverviewrowone form[name^="vrcratesoverview"] a:visited {
+	width: 25px;
+}
+.vri-roverviewrowone .bluedays > span {
+	line-height: 1.2em;
+}
+.vri-roverview-itemunits {
+	height: 18px;
+	width: 18px;
+}
+.vri-ratesoverview-period-inner {
+	background: #e7e7e7;
+}
+.vri-ratesoverview-lostab-cont {
+	background: #fff;
+	display: block;
+	padding: 10px 10px 20px;
+}
+.vri-ratesoverview-numnight::after {
+	width: 20px;
+	height: 20px;
+	line-height: 16px;
+}
+#vri-addnumnight-act {
+	margin-top: 6px;
+}
+.vri-ratesoverview-tabscont div.vri-ratesoverview-tab-unactive {
+	background: #e7e7e7;
+}
+.vri-ratesoverview-itemdetails {
+	margin-top: 20px;
+}
+.vri-ratesoverview-itemdetails h3 {
+	margin-bottom: 15px;
+}
+.vri-roverw-setnewrate-vcm {
+	margin: 10px auto;
+}
+.vri-roverw-daymod {
+	font-size: 11px;
+}
+.vri-roverw-daymod-infospids {
+	font-size: 10px;
+	font-weight: normal;
+	width: 18px;
+	height: 18px;
+}
+.vri-roverw-daymod-infospids-incont ul {
+	padding:0;
+}
+/* Calendar view **/
+.vri-quickres-wrapper .admintable .input-append {
+	display: inline-block;
+}
+.vri-quickres-wrapper .admintable .input-append .hasDatepicker, .vri-dashboard-today-occ .today-search {
+	padding: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.vri-quickres-wrapper .admintable .input-append .btn, .vri-dashboard-today-occ .btn {
+	background: #e7e7e7;
+	border: 1px solid #ced4da;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	vertical-align: top;
+	line-height: 1.45em;
+}
+/* Availability Overview - Calendar bug **/
+.bluedays {
+	font-weight: normal;
+}
+.vri-overview-itemunits {
+	min-height: 25px;
+	min-width: 25px;
+	padding: 3px;
+	font-weight: normal;
+	line-height: 20px;
+}
+/* Bookings List - Filter toolbar bugs **/
+.vri-btn-toolbar .input-append input[type="text"] {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.vri-btn-toolbar .input-append .btn {
+	border: 1px solid #ced4da;
+}
+/* Booking Details - General bugs **/
+.vri-bookdet-foot .vri-country-flag-left {
+	margin: 6px 7px 0 0;
+}
+.vri-country-flag-left {
+	margin-top: 2px;
+}
+.vri-bookingdet-summary-total td:first-child {
+	vertical-align: top;
+}
+.vri-bookingdet-detcont input[type="text"] {
+	margin-bottom: 5px;
+}
+/* Edit Reservation - General Bugs **/
+.vri-editbooking-item-pricetype-cost select {
+	font-size: 13px;
+}
+.vri-editbooking-summary-item > div {
+	padding-top: 20px;
+}
+.vri-bookingdet-detcont .field-calendar #checkindate, .vri-bookingdet-detcont .field-calendar #checkoutdate {
+	margin-bottom: 0;
+	width: 110px !important;
+}
+.vri-bookingdet-detcont label {
+	display: block;
+}
+.vri-editbooking-item-extracosts .vri-ebusy-addextracost {
+	border: 1px solid #ced4da;
+}
+.vri-editbooking-item-extracosts .vri-ebusy-addextracost i {
+	margin-right: 5px;
+}
+.vri-editbooking-totpaid label {
+	display: block;
+}
+.vri-editbooking-additem i {
+	margin-right: 5px;
+}
+.vri-add-item-overlay .vri-add-item-entry {
+	margin: 5px 0;
+}
+.vri-add-item-overlay label {
+	display: block;
+}
+/* Invoices - General Bugs **/
+.vri-invoices-inv-container {
+	background: #fff;
+	font-size: 12px;
+}
+.vri-invoices-inv-container {
+	height: 182px;
+}
+.vri-invoices-inv-container .vri-country-flag-left {
+	margin: 1px 3px 0 0;
+}
+.vri-timeline-container {
+	margin-bottom: 15px;
+}
+.vri-timeline-container .btn-toolbar {
+	margin-bottom: 10px;
+}
+.vri-timeline-content .label-info {
+	background: #31708f;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 6px 8px !important;
+}
+.vri-timeline-content .badge {
+	font-size: 11px;
+	font-weight: normal;
+	padding: 3px .4em;
+}
+.vri-timeline-content .btn {
+	border: 1px solid #ced4da;
+}
+form[name="invoicesform"] .btn-toolbar .pull-right .btn, #vri-statsform .btn-toolbar .pull-right .btn {
+	border: 1px solid #ced4da;
+	background: #fff;
+	cursor: pointer;
+}
+.vri-timeline-content {
+	background: #fff;	
+	padding: 40px 15px 15px;
+}
+.vri-invoices-inv-back-commands .btn {
+	border: 1px solid #ced4da;
+}
+.vri-timeline-relative .vri-timeline-label {
+	font-size: 14px;
+	width: auto;
+	top: 40px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+.btn-toolbar #filterinvoices {
+	padding: 5px 6px;
+}
