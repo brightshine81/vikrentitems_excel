@@ -17,6 +17,7 @@ use PhpOffice\PhpSpreadsheet\Style\Color;
 use PhpOffice\PhpSpreadsheet\Style\Fill;
 use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 use PhpOffice\PhpSpreadsheet\Style\Alignment;
+use PhpOffice\PhpSpreadsheet\Style\Border;
 
 defined('_JEXEC') or die('Restricted access');
 
@@ -4744,8 +4745,8 @@ class VikRentItemsController extends JControllerVikRentItems {
                     ->setCategory('auto-generated');
 
                 // columns
-                $csvlines[] = array('ID', JText::_('VRIEXPCSVPICK'), JText::_('VRIEXPCSVDROP'), JText::_('VRIEXPCSVITEMS'), JText::_('VRIEXPCSVPICKLOC'), JText::_('VRIEXPCSVDROPLOC'),
-                    "Nom", "Prénom", "e-Mail", "Téléphone", "Code postal", "Ville", JText::_('VRIEXPCSVPAYMETH'), JText::_('VRIEXPCSVORDSTATUS'), JText::_('VRIEXPCSVTOT'), JText::_('VRIEXPCSVTOTPAID'));
+                $csvlines[] = array('ID', 'Date de prise en charge', 'Date de restitution',
+                    "Nom", "Prénom", "e-Mail", "Téléphone", "CP", "Ville", 'Statut', 'Total');
 
                 foreach ($rows as $r) {
                     $pickdate = $pdatetype == 'ts' ? $r['ritiro'] : date($pdateformat, $r['ritiro']);
@@ -4779,9 +4780,9 @@ class VikRentItemsController extends JControllerVikRentItems {
 
                     $payment = VikRentItems::getPayment($r['idpayment']);
                     $saystatus = $r['status']; // ($r['status']=="confirmed" ? JText::_('VRIONFIRMED') : JText::_('VRSTANDBY'));
-                    $csvlines[] = array($r['id'], $pickdate, $dropdate, implode(', ', $nowitems), $pickloc, $droploc,
+                    $csvlines[] = array($r['id'], $pickdate, $dropdate,
                         $custfields["Nom"], $custfields["Prénom"], $custfields["e-Mail"], $custfields["Téléphone"], $custfields["Code postal"], $custfields["Ville"],
-                        $payment['name'], $saystatus, VikRentItems::numberFormat($r['order_total']), VikRentItems::numberFormat($r['totpaid']));
+                        $saystatus, VikRentItems::numberFormat($r['order_total']));
                 }
 
                 $spreadsheet->getActiveSheet()
@@ -4792,39 +4793,48 @@ class VikRentItemsController extends JControllerVikRentItems {
                     //    we want to set these values (default is A1)
                     );
 
-                $spreadsheet->getActiveSheet()->getColumnDimension('A')->setWidth(8);
-                $spreadsheet->getActiveSheet()->getColumnDimension('B')->setWidth(14);
-                $spreadsheet->getActiveSheet()->getColumnDimension('C')->setWidth(14);
-                $spreadsheet->getActiveSheet()->getColumnDimension('D')->setWidth(15);
-                $spreadsheet->getActiveSheet()->getColumnDimension('E')->setWidth(15);
-                $spreadsheet->getActiveSheet()->getColumnDimension('F')->setWidth(15);
-                $spreadsheet->getActiveSheet()->getColumnDimension('G')->setWidth(12);
-                $spreadsheet->getActiveSheet()->getColumnDimension('H')->setWidth(12);
-                $spreadsheet->getActiveSheet()->getColumnDimension('I')->setWidth(25);
-                $spreadsheet->getActiveSheet()->getColumnDimension('J')->setWidth(15);
-                $spreadsheet->getActiveSheet()->getColumnDimension('K')->setWidth(12);
-                $spreadsheet->getActiveSheet()->getColumnDimension('L')->setWidth(15);
-                $spreadsheet->getActiveSheet()->getColumnDimension('M')->setWidth(25);
-                $spreadsheet->getActiveSheet()->getColumnDimension('N')->setWidth(10);
-                $spreadsheet->getActiveSheet()->getColumnDimension('O')->setWidth(15);
-                $spreadsheet->getActiveSheet()->getColumnDimension('P')->setWidth(15);
+                $spreadsheet->getActiveSheet()->getColumnDimension('A')->setWidth(4);
+                $spreadsheet->getActiveSheet()->getColumnDimension('B')->setWidth(11);
+                $spreadsheet->getActiveSheet()->getColumnDimension('C')->setWidth(11);
+                $spreadsheet->getActiveSheet()->getColumnDimension('D')->setWidth(12);
+                $spreadsheet->getActiveSheet()->getColumnDimension('E')->setWidth(12);
+                $spreadsheet->getActiveSheet()->getColumnDimension('F')->setWidth(25);
+                $spreadsheet->getActiveSheet()->getColumnDimension('G')->setWidth(15);
+                $spreadsheet->getActiveSheet()->getColumnDimension('H')->setWidth(6);
+                $spreadsheet->getActiveSheet()->getColumnDimension('I')->setWidth(20);
+                $spreadsheet->getActiveSheet()->getColumnDimension('J')->setWidth(10);
+                $spreadsheet->getActiveSheet()->getColumnDimension('K')->setWidth(8);
 
+                $spreadsheet->getActiveSheet()->getRowDimension(1)->setRowHeight(120);
 
-                $spreadsheet->getActiveSheet()->getStyle('A1:P1')->getFont()->setBold(true);
-                $spreadsheet->getActiveSheet()->getStyle('A1:P1')->getFont()->getColor()->setARGB(Color::COLOR_WHITE);
-                $spreadsheet->getActiveSheet()->getStyle('A1:P1')->applyFromArray(
-                    ['fill' => [
-                        'fillType' => Fill::FILL_SOLID,
-                        'color' => ['argb' => 'FF70AD47'],
-                    ],
+                $spreadsheet->getActiveSheet()->getStyle('A1:K1')->getFont()->setBold(true);
+                $spreadsheet->getActiveSheet()->getStyle('A1:K1')->getFont()->getColor()->setARGB(Color::COLOR_WHITE);
+                $spreadsheet->getActiveSheet()->getStyle('A1:K1')->applyFromArray(
+                    [
+                        'fill' => [
+                            'fillType' => Fill::FILL_SOLID,
+                            'color' => ['argb' => 'FF70AD47'],
+                        ],
+                        'alignment' => [
+                            'horizontal' => Alignment::HORIZONTAL_CENTER,
+                            'textRotation' => 90,
+                        ]
                     ]
                 );
 
                 $line_count = count($csvlines);
 
-                $spreadsheet->getActiveSheet()->getStyle("O2:P$line_count")->getNumberFormat()->setFormatCode(NumberFormat::FORMAT_NUMBER_00);
-                $spreadsheet->getActiveSheet()->getStyle("O2:P$line_count")->getAlignment()->setHorizontal(Alignment::HORIZONTAL_RIGHT);
-                $spreadsheet->getActiveSheet()->getStyle("J2:J$line_count")->getAlignment()->setHorizontal(Alignment::HORIZONTAL_LEFT);
+                $spreadsheet->getActiveSheet()->getStyle("K2:K$line_count")->getNumberFormat()->setFormatCode(NumberFormat::FORMAT_NUMBER_00);
+                $spreadsheet->getActiveSheet()->getStyle("K2:K$line_count")->getAlignment()->setHorizontal(Alignment::HORIZONTAL_RIGHT);
+                $spreadsheet->getActiveSheet()->getStyle("G2:G$line_count")->getAlignment()->setHorizontal(Alignment::HORIZONTAL_LEFT);
+
+                $spreadsheet->getActiveSheet()->getStyle("A1:K$line_count")->applyFromArray(
+                    [
+                        'borders' => [
+                            'allBorders' => ['borderStyle' => Border::BORDER_THIN],
+                        ],
+                    ]
+                );
 
 
                 // Rename worksheet
